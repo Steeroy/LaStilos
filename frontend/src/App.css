@@ -1,0 +1,139 @@
+body a {
+  text-decoration: none;
+}
+
+.App {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.button__primary_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0px 16px 0px 20px;
+  gap: 8px;
+  color: #fcfcfc;
+  border: none;
+  background: #ffbf00;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.button__primary_icon svg {
+  font-size: 20px !important;
+  color: #fcfcfc !important;
+}
+.button__primary_icon:hover {
+  background: #ffcd72;
+}
+
+.container {
+  margin: 0px 64px !important;
+  padding: 0 !important;
+}
+
+.button__secondary_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0px 16px 0px 20px;
+  gap: 8px;
+  color: #fcfcfc;
+  border: none;
+  background: var(--secondary700);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.button__secondary_icon svg {
+  font-size: 20px !important;
+  color: #fcfcfc !important;
+}
+.button__secondary_icon:hover {
+  background: var(--secondary500);
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 0 !important;
+  background: #fbf3e0;
+}
+.navbar .nav__content {
+  width: 100%;
+  margin: 12px 64px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.navbar .nav__content .logo h2 {
+  font-family: "Kaushan Script", sans-serif !important;
+  font-size: 24px;
+  color: #e4aa00;
+}
+.navbar .nav__content .navigation .menu {
+  padding: 0;
+  margin: 0;
+}
+.navbar .nav__content .navigation .menu a {
+  height: 40px;
+  position: relative;
+  display: block;
+  padding: 2px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #725500;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.navbar .nav__content .navigation .menu a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 50px;
+  background: #e4aa00;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+.navbar .nav__content .navigation .menu a:hover {
+  color: #e4aa00;
+  font-weight: 600;
+}
+.navbar .nav__content .navigation .menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.navbar .nav__content .navigation .menu .menu__active {
+  color: #e4aa00;
+  font-weight: 600;
+}
+.navbar .nav__content .navigation .menu .menu__active::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.navbar .nav__content .right svg {
+  font-size: 24px;
+  color: #4f4400;
+}/*# sourceMappingURL=App.css.map */

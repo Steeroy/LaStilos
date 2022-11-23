@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --primary100: #fff9f1;
+  --primary200: #fff3e4;
+  --primary300: #ffe7c5;
+  --primary400: #ffdaa1;
+  --primary500: #ffcd72;
+  --primary600: #ffbf00;
+  --primary700: #e4aa00;
+  --primary800: #c59300;
+  --primary900: #a17800;
+  --primary1000: #725500;
+  --secondary100: #f8f6f1;
+  --secondary200: #f1eee4;
+  --secondary300: #e3dcc5;
+  --secondary400: #d4c8a1;
+  --secondary500: #c3b272;
+  --secondary600: #b29a00;
+  --secondary700: #9f8900;
+  --secondary800: #897700;
+  --secondary900: #706100;
+  --secondary1000: #4f4400;
+  --error: #ff2f2f;
+  --warning: #ffa500;
+  --success: #0acc4b;
+  --info: #3395f8;
+  --grey: #646d7c;
+  --black: #121212;
+  --white: #fcfcfc;
+}
