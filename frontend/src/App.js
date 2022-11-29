@@ -11,6 +11,7 @@ import SignIn from './screens/SignIn/SignIn';
 import SignUp from './screens/SignUp/SignUp';
 import Favorites from './screens/Favorites/Favorites';
 import Footer from './components/Footer';
+import Product from './screens/Product/Product';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/product/:id" element={<Product />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/home" element={<Home />} />
             <Route path="/" element={<Navigate to="/home" />} />

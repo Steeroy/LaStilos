@@ -35,6 +35,45 @@ li {
   background: #ffcd72;
 }
 
+.button__primary_small_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0px 12px 0px 16px;
+  gap: 6px;
+  color: #fcfcfc;
+  border: none;
+  background: #ffbf00;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.button__primary_small_icon svg {
+  font-size: 16px !important;
+  color: #fcfcfc !important;
+}
+.button__primary_small_icon:hover {
+  background: #ffcd72;
+}
+
+.button__small_heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 2px solid var(--primary600);
+}
+.button__small_heart svg {
+  height: 18px;
+  width: 18px;
+  color: var(--primary600);
+}
+
 .container {
   margin: 0px 64px !important;
   padding: 0 !important;
@@ -62,6 +101,17 @@ li {
 }
 .button__secondary_icon:hover {
   background: var(--secondary500);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating span svg {
+  width: 16px;
+  height: 16px;
+  color: var(--primary600);
 }
 
 header {
@@ -136,4 +186,98 @@ header {
 .navbar .nav__content .right svg {
   font-size: 24px;
   color: #4f4400;
+}
+
+.menu__card {
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid var(--primary600);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0px 7px 20px rgba(40, 41, 61, 0.08);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.menu__card .icon__circle {
+  width: 44px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary600);
+}
+.menu__card .icon__circle svg {
+  width: 24px;
+  height: 24px;
+  color: var(--white);
+}
+.menu__card h5 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary600);
+}
+
+.activeMenu,
+.menu__card:hover {
+  background: var(--primary600);
+}
+.activeMenu .icon__circle,
+.menu__card:hover .icon__circle {
+  background: var(--white);
+}
+.activeMenu .icon__circle svg,
+.menu__card:hover .icon__circle svg {
+  color: var(--primary600);
+}
+.activeMenu h5,
+.menu__card:hover h5 {
+  color: var(--white);
+}
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px 24px 0px;
+  height: 330px;
+}
+.product__card .product__img-box {
+  width: 134px;
+  height: 104px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s ease;
+}
+.product__card .product__img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__card .product__img-box img:hover {
+  transform: scale(1.2);
+}
+.product__card h6 {
+  color: var(--primary600);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px;
+  text-align: center;
+}
+.product__card h5 {
+  color: var(--secondary900);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px;
+}
+.product__card .addButtons {
+  display: flex;
+  gap: 24px;
 }/*# sourceMappingURL=App.css.map */

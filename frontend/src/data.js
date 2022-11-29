@@ -613,6 +613,44 @@ const data = {
       numRatings: 22,
     },
   ],
+
+  menus: [
+    {
+      icon: 'ion:fast-food',
+      title: 'All',
+      slug: 'all',
+    },
+    {
+      icon: 'fa6-solid:burger',
+      title: 'Burger',
+      slug: 'burger',
+    },
+    {
+      icon: 'fluent:food-pizza-24-filled',
+      title: 'Pizza',
+      slug: 'pizza',
+    },
+    {
+      icon: 'icon-park-solid:bread',
+      title: 'Bread',
+      slug: 'bread',
+    },
+    {
+      icon: 'mingcute:drink-fill',
+      title: 'Drink',
+      slug: 'drink',
+    },
+    {
+      icon: 'fluent:bowl-salad-24-filled',
+      title: 'Salad',
+      slug: 'salad',
+    },
+    {
+      icon: 'ion:ice-cream',
+      title: 'Dessert',
+      slug: 'dessert',
+    },
+  ],
 };
 
 export default data;

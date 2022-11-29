@@ -2,8 +2,6 @@
 
 ## We covered the following
 
-1. Created the data file with products
-2. Created the basic styles with primary and secondary colours
-3. Assigned each imported font from google font to their respective typeface
-4. Created the navbar component using my design
-5. Created the hero section
+1. Created the menu items row
+2. Rendered products from the data file
+3. Created sperate product card and menu card, and used them for props from data file

@@ -3,6 +3,11 @@
 body {
   overflow-x: hidden;
   position: relative;
+  background: #fff7ef;
+}
+
+section {
+  margin: 128px 64px 0px 64px;
 }
 
 h1,
