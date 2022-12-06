@@ -130,6 +130,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .navbar {
@@ -317,5 +318,210 @@ header {
   .addButtons {
     display: flex;
     gap: 24px;
+  }
+}
+
+//These are styles for the testimonial
+
+.testimonial {
+  margin: 0px 16px 16px 16px !important;
+
+  width: 90% !important;
+  height: fit-content;
+  display: flex !important;
+  padding: 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  .test__img_box {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .test__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin-bottom: 0px;
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--black);
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// These ares styles for the footer
+
+footer {
+  margin-top: 112px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 38px 64px;
+  background: #fbf3e0;
+
+  .top__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    h5 {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--secondary700);
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--secondary700);
+    }
+
+    p {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+
+    .useful__links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+
+    .get_in_touch {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      .contact__links {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .address,
+        .call__us,
+        .email {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+      }
+    }
+
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+
+      .logo__text {
+        font-family: 'Kaushan Script', sans-serif;
+        font-size: 42px;
+        color: var(--primary700);
+      }
+
+      .subscribe__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          font-weight: 600;
+          font-size: 24px;
+          color: var(--secondary600);
+          margin: 0px;
+        }
+
+        p {
+          font-size: 16px;
+          color: var(--black);
+          margin: 0px;
+        }
+      }
+
+      .input__subscribe {
+        display: flex;
+        border: 2px solid var(--primary700);
+        padding: 8px 12px 8px 24px;
+        border-radius: 12px;
+        background: var(--white);
+        gap: 8px;
+
+        input {
+          border: none;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--primary700);
+
+          &::placeholder {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--primary700);
+          }
+
+          &:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__separator {
+    width: 100%;
+    height: 2px;
+    background: var(--secondary700);
+  }
+
+  .copyright__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 16px;
+      color: var(--black);
+      margin: 0px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        color: var(--black);
+      }
+    }
   }
 }

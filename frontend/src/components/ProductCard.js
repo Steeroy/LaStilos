@@ -8,13 +8,13 @@ import '../App.css';
 function ProductCard({ item }) {
   return (
     <div className="product__card">
-      <Link to={`/product/${item.id}`}>
+      <Link to={`/product/${item.slug}`}>
         <div className="product__img-box">
           <img src={item.imgUrl} alt={item.name} />
         </div>
       </Link>
 
-      <Link to={`/product/${item.id}`}>
+      <Link to={`/product/${item.slug}`}>
         <h6>{item.name}</h6>
       </Link>
       <h5>R{item.price}</h5>

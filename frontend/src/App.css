@@ -119,6 +119,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .navbar {
@@ -280,4 +281,191 @@ header {
 .product__card .addButtons {
   display: flex;
   gap: 24px;
+}
+
+.testimonial {
+  margin: 0px 16px 16px 16px !important;
+  width: 90% !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex !important;
+  padding: 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonial .test__img_box {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.testimonial .test__img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonial .test__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial .test__content p {
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--black);
+}
+.testimonial .test__content p span {
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 112px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 38px 64px;
+  background: #fbf3e0;
+}
+.footer .top__footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer .top__footer h5 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--secondary700);
+}
+.footer .top__footer h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--secondary700);
+}
+.footer .top__footer p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.footer .top__footer .useful__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer .top__footer .useful__links div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer .top__footer .get_in_touch {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer .top__footer .get_in_touch .contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer .top__footer .get_in_touch .contact__links .address,
+.footer .top__footer .get_in_touch .contact__links .call__us,
+.footer .top__footer .get_in_touch .contact__links .email {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer .top__footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.footer .top__footer .newsletter .logo__text {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 42px;
+  color: var(--primary700);
+}
+.footer .top__footer .newsletter .subscribe__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .top__footer .newsletter .subscribe__text h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--secondary600);
+  margin: 0px;
+}
+.footer .top__footer .newsletter .subscribe__text p {
+  font-size: 16px;
+  color: var(--black);
+  margin: 0px;
+}
+.footer .top__footer .newsletter .input__subscribe {
+  display: flex;
+  border: 2px solid var(--primary700);
+  padding: 8px 12px 8px 24px;
+  border-radius: 12px;
+  background: var(--white);
+  gap: 8px;
+}
+.footer .top__footer .newsletter .input__subscribe input {
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary700);
+}
+.footer .top__footer .newsletter .input__subscribe input::-moz-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary700);
+}
+.footer .top__footer .newsletter .input__subscribe input:-ms-input-placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary700);
+}
+.footer .top__footer .newsletter .input__subscribe input::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary700);
+}
+.footer .top__footer .newsletter .input__subscribe input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.footer .footer__separator {
+  width: 100%;
+  height: 2px;
+  background: var(--secondary700);
+}
+.footer .copyright__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .copyright__section p {
+  font-size: 16px;
+  color: var(--black);
+  margin: 0px;
+}
+.footer .copyright__section .socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.footer .copyright__section .socials svg {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
 }/*# sourceMappingURL=App.css.map */

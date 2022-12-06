@@ -3,6 +3,7 @@ const data = {
     {
       id: 1,
       name: 'Bacon & Cheese',
+      slug: 'Bacon-&-Cheese',
       type: 'burger',
       imgUrl: '/images/bacon_and_cheese_burger.png',
       price: 45,
@@ -15,6 +16,7 @@ const data = {
     {
       id: 2,
       name: 'Bacon & Purple Onion',
+      slug: 'Bacon-&-Purple-Onion',
       type: 'pizza',
       imgUrl: '/images/bacon_and_purple_onion.png',
       price: 64,
@@ -27,6 +29,7 @@ const data = {
     {
       id: 3,
       name: 'Bacon & Mushroom',
+      slug: 'Bacon-&-Mushroom',
       type: 'burger',
       imgUrl: '/images/beef_and_mushroom.png',
       price: 55,
@@ -39,6 +42,7 @@ const data = {
     {
       id: 4,
       name: 'Beef Cotlet',
+      slug: 'Beef-Cotlet',
       type: 'burger',
       imgUrl: '/images/beef_cotlet.png',
       price: 42,
@@ -51,6 +55,7 @@ const data = {
     {
       id: 5,
       name: 'Bell Pepper & Cheese',
+      slug: 'Bell-Pepper-&-Cheese',
       type: 'pizza',
       imgUrl: '/images/bell_pepper_and_cheese.png',
       price: 84,
@@ -63,6 +68,7 @@ const data = {
     {
       id: 6,
       name: 'Broadleaf Red Wine',
+      slug: 'Broadleaf-Red-Wine',
       type: 'drink',
       imgUrl: '/images/broadleaf_red_wine.png',
       price: 68,
@@ -75,6 +81,7 @@ const data = {
     {
       id: 7,
       name: 'Buns loaf bread',
+      slug: 'Buns-loaf-bread',
       type: 'bread',
       imgUrl: '/images/buns-loaf-bread-stone-surface.png',
       price: 32,
@@ -87,6 +94,7 @@ const data = {
     {
       id: 8,
       name: 'Cheese Burger',
+      slug: 'Cheese-Burger',
       type: 'burger',
       imgUrl: '/images/cheese.png',
       price: 38,
@@ -99,6 +107,7 @@ const data = {
     {
       id: 9,
       name: 'Cheesy Tomato',
+      slug: 'Cheesy-Tomato',
       type: 'pizza',
       imgUrl: '/images/cheesey_tomato.png',
       price: 78,
@@ -111,6 +120,7 @@ const data = {
     {
       id: 10,
       name: 'Chicken & Lettuce',
+      slug: 'Chicken-&-Lettuce',
       type: 'burger',
       imgUrl: '/images/chicken_and_lettuce.png',
       price: 58,
@@ -123,6 +133,7 @@ const data = {
     {
       id: 11,
       name: 'Chicken & Melted Cheese',
+      slug: 'Chicken-&-Melted-Cheese',
       type: 'burger',
       imgUrl: '/images/chicken_and_melted_cheese.png',
       price: 62,
@@ -135,6 +146,7 @@ const data = {
     {
       id: 12,
       name: 'Chicken & Tomato Sauce',
+      slug: 'Chicken-&-Tomato-Sauce',
       type: 'burger',
       imgUrl: '/images/chicken_and_tomato_sauce.png',
       price: 45,
@@ -147,6 +159,7 @@ const data = {
     {
       id: 13,
       name: 'Chicken Strips',
+      slug: 'Chicken-Strips',
       type: 'salad',
       imgUrl: '/images/chicken_strips.png',
       price: 65,
@@ -159,6 +172,7 @@ const data = {
     {
       id: 14,
       name: 'Chocolate & Cherry',
+      slug: 'Chocolate-&-Cherry',
       type: 'dessert',
       imgUrl: '/images/chocolate_and_cherry.png',
       price: 62,
@@ -171,6 +185,7 @@ const data = {
     {
       id: 15,
       name: 'Chocolate Bread & Blueberry',
+      slug: 'Chocolate-Bread-&-Blueberry',
       type: 'dessert',
       imgUrl: '/images/chocolate_bread_and_blueberry.png',
       price: 55,
@@ -183,6 +198,7 @@ const data = {
     {
       id: 16,
       name: 'Chocolate Tart',
+      slug: 'Chocolate-Tart',
       type: 'dessert',
       imgUrl: '/images/chocolate_tart.png',
       price: 54,
@@ -195,6 +211,7 @@ const data = {
     {
       id: 17,
       name: 'Coke Small',
+      slug: 'Coke-Small',
       type: 'drink',
       imgUrl: '/images/coke.png',
       price: 16,
@@ -207,6 +224,7 @@ const data = {
     {
       id: 18,
       name: 'Coke Can',
+      slug: 'Coke-Can',
       type: 'drink',
       imgUrl: '/images/coke_can.png',
       price: 15,
@@ -219,6 +237,7 @@ const data = {
     {
       id: 19,
       name: 'Crispy Baked Loaf',
+      slug: 'Crispy-Baked-Loaf',
       type: 'bread',
       imgUrl: '/images/crispy_baked_loaf.png',
       price: 22,
@@ -231,6 +250,7 @@ const data = {
     {
       id: 20,
       name: 'Crispy Made Loaf',
+      slug: 'Crispy-Made-Loaf',
       type: 'bread',
       imgUrl: '/images/crispy_made_loaf.png',
       price: 32,
@@ -243,6 +263,7 @@ const data = {
     {
       id: 21,
       name: 'Crispy Olives & Sausage',
+      slug: 'Crispy-Olives-&-Sausage',
       type: 'pizza',
       imgUrl: '/images/crispy_olives_and_sausage.png',
       price: 82,
@@ -255,6 +276,7 @@ const data = {
     {
       id: 22,
       name: 'Dark Chocolate Bun',
+      slug: 'Dark-Chocolate-Bun',
       type: 'bread',
       imgUrl: '/images/dark_chocolate_bun.png',
       price: 22,
@@ -267,6 +289,7 @@ const data = {
     {
       id: 23,
       name: 'Dark Chocolate Cupcake',
+      slug: 'Dark-Chocolate-Cupcake',
       type: 'dessert',
       imgUrl: '/images/dark_chocolate_cupcake.png',
       price: 22,
@@ -279,6 +302,7 @@ const data = {
     {
       id: 24,
       name: 'Dark Chocolate Milkshake',
+      slug: 'Dark-Chocolate-Milkshake',
       type: 'drink',
       imgUrl: '/images/dark_chocolate_milkshake.png',
       price: 45,
@@ -291,6 +315,7 @@ const data = {
     {
       id: 25,
       name: 'Double Chicken Sauced',
+      slug: 'Double-Chicken-Sauced',
       type: 'burger',
       imgUrl: '/images/double_chicken_sauced.png',
       price: 60,
@@ -303,6 +328,7 @@ const data = {
     {
       id: 26,
       name: 'Freshly Baked Bun',
+      slug: 'Freshly-Baked-Bun',
       type: 'bread',
       imgUrl: '/images/freshly_baked_bun.png',
       price: 55,
@@ -315,6 +341,7 @@ const data = {
     {
       id: 27,
       name: 'Full Vegetables',
+      slug: 'Full-Vegetables',
       type: 'salad',
       imgUrl: '/images/full_vegetables.png',
       price: 120,
@@ -327,6 +354,7 @@ const data = {
     {
       id: 28,
       name: 'Greens & White Cheese',
+      slug: 'Greens-&-White-Cheese',
       type: 'salad',
       imgUrl: '/images/green_and_white_cheese.png',
       price: 140,
@@ -339,6 +367,7 @@ const data = {
     {
       id: 29,
       name: 'Greens & Eggs',
+      slug: 'Greens-&-Eggs',
       type: 'salad',
       imgUrl: '/images/greens_and_eggs.png',
       price: 160,
@@ -351,6 +380,7 @@ const data = {
     {
       id: 30,
       name: 'Maghitarama',
+      slug: 'Maghitarama',
       type: 'pizza',
       imgUrl: '/images/maghitarama.png',
       price: 95,
@@ -363,6 +393,7 @@ const data = {
     {
       id: 31,
       name: 'Melted Cheese & Bacon',
+      slug: 'Melted-Cheese-&-Bacon',
       type: 'pizza',
       imgUrl: '/images/melted_cheese_and_bacon.png',
       price: 110,
@@ -375,6 +406,7 @@ const data = {
     {
       id: 32,
       name: 'Mushroom & Melted Cheese',
+      slug: 'Mushroom-&-Melted-Cheese',
       type: 'pizza',
       imgUrl: '/images/mushroom_and_melted_cheese.png',
       price: 80,
@@ -387,6 +419,7 @@ const data = {
     {
       id: 33,
       name: 'Olives & Melted White Cheese',
+      slug: 'Olives-&-Melted-White-Cheese',
       type: 'pizza',
       imgUrl: '/images/olives_and_melted_whitecheese.png',
       price: 79,
@@ -399,6 +432,7 @@ const data = {
     {
       id: 34,
       name: 'Olives & Pepper',
+      slug: 'Olives-&-Pepper',
       type: 'pizza',
       imgUrl: '/images/olives_and_pepper.png',
       price: 105,
@@ -410,7 +444,8 @@ const data = {
     },
     {
       id: 35,
-      name: 'Oero & Chocolate Milkshake',
+      name: 'Oreo & Chocolate Milkshake',
+      slug: 'Oreo-&-Chocolate-Milkshake',
       type: 'drink',
       imgUrl: '/images/oreo_and_chocolate_milkshake.png',
       price: 45,
@@ -422,7 +457,8 @@ const data = {
     },
     {
       id: 36,
-      name: 'Oero & Strawberry Milkshake',
+      name: 'Oreo & Strawberry Milkshake',
+      slug: 'Oreo-&-Strawberry-Milkshake',
       type: 'drink',
       imgUrl: '/images/oreo_and_strawberry_milkshake.png',
       price: 45,
@@ -434,7 +470,8 @@ const data = {
     },
     {
       id: 37,
-      name: 'Oero Milkshake',
+      name: 'Oreo Milkshake',
+      slug: 'Oreo-Milkshake',
       type: 'drink',
       imgUrl: '/images/oreo_milkshake.png',
       price: 35,
@@ -447,6 +484,7 @@ const data = {
     {
       id: 38,
       name: 'Paros Red Wine',
+      slug: 'Paros-Red-Wine',
       type: 'drink',
       imgUrl: '/images/paros_red_wine.png',
       price: 68,
@@ -459,6 +497,7 @@ const data = {
     {
       id: 39,
       name: 'Pastry',
+      slug: 'Pastry',
       type: 'bread',
       imgUrl: '/images/pastry.png',
       price: 45,
@@ -471,6 +510,7 @@ const data = {
     {
       id: 40,
       name: 'Red Bacon',
+      slug: 'Red-Bacon',
       type: 'pizza',
       imgUrl: '/images/red_bacon.png',
       price: 115,
@@ -483,6 +523,7 @@ const data = {
     {
       id: 41,
       name: 'Shrimp Dish',
+      slug: 'Shrimp-Dish',
       type: 'salad',
       imgUrl: '/images/shrimp_dish.png',
       price: 115,
@@ -495,6 +536,7 @@ const data = {
     {
       id: 42,
       name: 'Soft Baked Bun',
+      slug: 'Soft-Baked-Bun',
       type: 'bread',
       imgUrl: '/images/soft_baked_bun.png',
       price: 24,
@@ -507,6 +549,7 @@ const data = {
     {
       id: 43,
       name: 'Strawberry Cupcake',
+      slug: 'Strawberry-Cupcake',
       type: 'dessert',
       imgUrl: '/images/strawberry_cupcake.png',
       price: 32,
@@ -519,6 +562,7 @@ const data = {
     {
       id: 44,
       name: 'Strawberry Folds',
+      slug: 'Strawberry-Folds',
       type: 'dessert',
       imgUrl: '/images/strawberry_folds.png',
       price: 45,
@@ -531,6 +575,7 @@ const data = {
     {
       id: 45,
       name: 'Tomato & Wors',
+      slug: 'Tomato-&-Wors',
       type: 'salad',
       imgUrl: '/images/tomato_and_wors.png',
       price: 115,
@@ -543,6 +588,7 @@ const data = {
     {
       id: 46,
       name: 'Tomato & Yellow Pepper',
+      slug: 'Tomato-&-Yellow-Pepper',
       type: 'salad',
       imgUrl: '/images/tomato_and_yellow_pepper.png',
       price: 125,
@@ -555,6 +601,7 @@ const data = {
     {
       id: 47,
       name: 'Tomato Nectarine',
+      slug: 'Tomato-Nectarine',
       type: 'salad',
       imgUrl: '/images/tomato_nectarine.png',
       price: 90,
@@ -567,6 +614,7 @@ const data = {
     {
       id: 48,
       name: 'Waffle & Blackberry',
+      slug: 'Waffle-&-Blackberry',
       type: 'dessert',
       imgUrl: '/images/waffle_and_blackberry.png',
       price: 65,
@@ -579,6 +627,7 @@ const data = {
     {
       id: 49,
       name: 'Waffle & Strawberry',
+      slug: 'Waffle-&-Strawberry',
       type: 'dessert',
       imgUrl: '/images/waffle_and_strawberry.png',
       price: 65,
@@ -591,6 +640,7 @@ const data = {
     {
       id: 50,
       name: 'Waffle & Vanilla Cream',
+      slug: 'Waffle-&-Vanilla-Cream',
       type: 'dessert',
       imgUrl: '/images/waffle_and_vanilla_cream.png',
       price: 45,
@@ -603,6 +653,7 @@ const data = {
     {
       id: 51,
       name: 'Zinger Patty',
+      slug: 'Zinger-Patty',
       type: 'burger',
       imgUrl: '/images/zinger_patty.png',
       price: 55,
