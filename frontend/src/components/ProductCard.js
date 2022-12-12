@@ -1,28 +1,55 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
 import { Icon } from '@iconify/react';
 
 import '../App.css';
+import axios from 'axios';
+import { Store } from '../Store';
 
-function ProductCard({ item }) {
+function ProductCard({ product }) {
+  const { state, dispatch: ctxDispatch } = useContext(Store);
+  const {
+    cart: { cartItems },
+  } = state;
+
+  const addToCartHandler = async (item) => {
+    const existItem = cartItems.find((x) => x._id === item._id);
+
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+
+    const { data } = await axios.get(`/api/products/${item._id}`);
+    if (data.inStock < quantity) {
+      window.alert('Sorry. Product out of stock');
+      return;
+    }
+
+    ctxDispatch({
+      type: 'CART_ADD_ITEM',
+      payload: { ...item, quantity },
+    });
+  };
+
   return (
     <div className="product__card">
-      <Link to={`/product/${item.slug}`}>
+      <Link to={`/product/${product.slug}`}>
         <div className="product__img-box">
-          <img src={item.imgUrl} alt={item.name} />
+          <img src={product.imgUrl} alt={product.name} />
         </div>
       </Link>
 
-      <Link to={`/product/${item.slug}`}>
-        <h6>{item.name}</h6>
+      <Link to={`/product/${product.slug}`}>
+        <h6>{product.name}</h6>
       </Link>
-      <h5>R{item.price}</h5>
+      <h5>R{product.price}</h5>
 
-      <Rating rating={item.rating} />
+      <Rating rating={product.rating} />
 
       <div className="addButtons">
-        <button className="button__primary_small_icon">
+        <button
+          className="button__primary_small_icon"
+          onClick={() => addToCartHandler(product)}
+        >
           <span>Add to Cart</span>
           <Icon icon="material-symbols:shopping-bag-outline" />
         </button>

@@ -1,0 +1,151 @@
+.cart .page__banner {
+  margin-top: 0px;
+  margin-bottom: 64px;
+  background-image: url("../../assets/Cart.png");
+  background-repeat: no-repeat;
+  height: 152px;
+}
+.cart .page__banner .page__banner_text {
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 84, 84, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .page__banner .page__banner_text span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--primary600);
+}
+.cart .cart__items {
+  margin: 0px 64px 0px 64px;
+}
+.cart .cart__items .items {
+  margin-top: 16px;
+}
+.cart .cart__items .items .col-md-8 {
+  padding: 0px;
+}
+.cart .cart__items .items .items__header {
+  background: var(--primary400);
+  padding: 6px 12px 6px 12px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.cart .cart__items .items .items__header h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary900);
+  margin-bottom: 0px;
+}
+.cart .cart__items .items .items__header .col-md-8,
+.cart .cart__items .items .items__header .col-md-2,
+.cart .cart__items .items .items__header .col-md-1 {
+  display: flex;
+  align-items: center;
+}
+.cart .cart__items .items .items__header .col-md-2,
+.cart .cart__items .items .items__header .col-md-1 {
+  justify-content: center;
+}
+.cart .cart__items .items .item__row {
+  width: 100% !important;
+}
+.cart .cart__items .items .item__row .row {
+  width: 100% !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  border-bottom: 1px solid var(--primary600);
+  padding: 8px 0px;
+}
+.cart .cart__items .items .item__row .row .col-md-6 {
+  padding: 0px;
+}
+.cart .cart__items .items .item__row .row .col-md-6 a {
+  text-decoration: none;
+  color: var(--primary600);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart .cart__items .items .item__row .row .col-md-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #897700;
+}
+.cart .cart__items .items .item__row .row .col-md-2 .add__subtract {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--primary600);
+}
+.cart .cart__items .items .item__row .row .col-md-2 .add__subtract span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.cart .cart__items .items .item__row .row .col-md-2 .add__subtract svg {
+  font-size: 16px;
+  cursor: pointer;
+}
+.cart .cart__items .items .item__row .row .col-md-2 .add__subtract button {
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+.cart .cart__items .items .item__row .row .price {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.cart .cart__items .items .item__row .row .remove__icon {
+  padding-left: 0px;
+}
+.cart .cart__items .items .item__row .row .remove__icon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+.cart .cart__items .items .item__row .row .remove__icon button {
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+.cart .cart__items .items .order__summary {
+  padding-left: 46px !important;
+  padding-right: 46px !important;
+}
+.cart .cart__items .items .order__summary h4 {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--primary600);
+}
+.cart .cart__items .items .order__summary .row {
+  padding: 12px 0px;
+}
+.cart .cart__items .items .order__summary .row:not(:nth-last-child(1)) {
+  border-bottom: 1px solid var(--primary600);
+}
+.cart .cart__items .items .order__summary .row:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart .cart__items .items .order__summary .row .titles {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--grey);
+}
+.cart .cart__items .items .order__summary .row .outcomes {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary900);
+}/*# sourceMappingURL=Cart.css.map */

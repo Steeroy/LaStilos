@@ -1,10 +1,11 @@
-import React from 'react';
-import { Navbar, NavbarBrand } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { Badge, Navbar, NavbarBrand } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
+import { Store } from '../Store';
 
 const nav__links = [
   {
@@ -26,6 +27,9 @@ const nav__links = [
 ];
 
 export default function NavBar() {
+  const { state } = useContext(Store);
+  const { cart } = state;
+
   return (
     <Navbar className="navbar">
       <div className="nav__content">
@@ -58,6 +62,11 @@ export default function NavBar() {
 
           <NavLink to="/cart">
             <Icon icon="ri:shopping-basket-2-line" />
+            {cart.cartItems.length > 0 && (
+              <Badge pill bg="danger">
+                {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+              </Badge>
+            )}
           </NavLink>
 
           <Link to="/signin">

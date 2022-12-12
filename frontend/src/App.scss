@@ -6,6 +6,7 @@ body {
 .App {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background: #fffaf4;
 }
 
 li {
@@ -523,5 +524,38 @@ footer {
         color: var(--black);
       }
     }
+  }
+}
+
+// These are styles for the checkout steps
+
+.checkout-steps > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 3px solid var(--primary600);
+  color: var(--primary600);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.item__image {
+  height: 60px;
+  width: 90px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    object-fit: cover;
   }
 }

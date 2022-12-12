@@ -5,6 +5,7 @@ body a {
 .App {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  background: #fffaf4;
 }
 
 li {
@@ -468,4 +469,35 @@ footer {
   width: 24px;
   height: 24px;
   color: var(--black);
+}
+
+.checkout-steps > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 3px solid var(--primary600);
+  color: var(--primary600);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.item__image {
+  height: 60px;
+  width: 90px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item__image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=App.css.map */

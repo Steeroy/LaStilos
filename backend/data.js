@@ -1,7 +1,26 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Siyanda',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+      imgUrl:
+        'https://res.cloudinary.com/dxpeznnto/image/upload/v1670804266/samples/people/kitchen-bar.jpg',
+    },
+    {
+      name: 'Stilo',
+      email: 'useer@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+      imgUrl:
+        'https://res.cloudinary.com/dxpeznnto/image/upload/v1670804269/samples/people/smiling-man.jpg',
+    },
+  ],
   products: [
     {
-      id: 1,
       name: 'Bacon & Cheese',
       slug: 'Bacon-&-Cheese',
       type: 'burger',
@@ -14,7 +33,6 @@ const data = {
       numRatings: 14,
     },
     {
-      id: 2,
       name: 'Bacon & Purple Onion',
       slug: 'Bacon-&-Purple-Onion',
       type: 'pizza',
@@ -27,7 +45,6 @@ const data = {
       numRatings: 14,
     },
     {
-      id: 3,
       name: 'Bacon & Mushroom',
       slug: 'Bacon-&-Mushroom',
       type: 'burger',
@@ -40,7 +57,6 @@ const data = {
       numRatings: 18,
     },
     {
-      id: 4,
       name: 'Beef Cotlet',
       slug: 'Beef-Cotlet',
       type: 'burger',
@@ -53,7 +69,6 @@ const data = {
       numRatings: 11,
     },
     {
-      id: 5,
       name: 'Bell Pepper & Cheese',
       slug: 'Bell-Pepper-&-Cheese',
       type: 'pizza',
@@ -66,7 +81,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 6,
       name: 'Broadleaf Red Wine',
       slug: 'Broadleaf-Red-Wine',
       type: 'drink',
@@ -79,7 +93,6 @@ const data = {
       numRatings: 26,
     },
     {
-      id: 7,
       name: 'Buns loaf bread',
       slug: 'Buns-loaf-bread',
       type: 'bread',
@@ -92,7 +105,6 @@ const data = {
       numRatings: 8,
     },
     {
-      id: 8,
       name: 'Cheese Burger',
       slug: 'Cheese-Burger',
       type: 'burger',
@@ -105,7 +117,6 @@ const data = {
       numRatings: 8,
     },
     {
-      id: 9,
       name: 'Cheesy Tomato',
       slug: 'Cheesy-Tomato',
       type: 'pizza',
@@ -118,7 +129,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 10,
       name: 'Chicken & Lettuce',
       slug: 'Chicken-&-Lettuce',
       type: 'burger',
@@ -131,7 +141,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 11,
       name: 'Chicken & Melted Cheese',
       slug: 'Chicken-&-Melted-Cheese',
       type: 'burger',
@@ -144,7 +153,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 12,
       name: 'Chicken & Tomato Sauce',
       slug: 'Chicken-&-Tomato-Sauce',
       type: 'burger',
@@ -157,7 +165,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 13,
       name: 'Chicken Strips',
       slug: 'Chicken-Strips',
       type: 'salad',
@@ -170,7 +177,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 14,
       name: 'Chocolate & Cherry',
       slug: 'Chocolate-&-Cherry',
       type: 'dessert',
@@ -183,7 +189,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 15,
       name: 'Chocolate Bread & Blueberry',
       slug: 'Chocolate-Bread-&-Blueberry',
       type: 'dessert',
@@ -196,7 +201,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 16,
       name: 'Chocolate Tart',
       slug: 'Chocolate-Tart',
       type: 'dessert',
@@ -209,7 +213,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 17,
       name: 'Coke Small',
       slug: 'Coke-Small',
       type: 'drink',
@@ -222,7 +225,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 18,
       name: 'Coke Can',
       slug: 'Coke-Can',
       type: 'drink',
@@ -235,7 +237,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 19,
       name: 'Crispy Baked Loaf',
       slug: 'Crispy-Baked-Loaf',
       type: 'bread',
@@ -248,7 +249,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 20,
       name: 'Crispy Made Loaf',
       slug: 'Crispy-Made-Loaf',
       type: 'bread',
@@ -261,7 +261,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 21,
       name: 'Crispy Olives & Sausage',
       slug: 'Crispy-Olives-&-Sausage',
       type: 'pizza',
@@ -274,7 +273,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 22,
       name: 'Dark Chocolate Bun',
       slug: 'Dark-Chocolate-Bun',
       type: 'bread',
@@ -287,7 +285,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 23,
       name: 'Dark Chocolate Cupcake',
       slug: 'Dark-Chocolate-Cupcake',
       type: 'dessert',
@@ -300,7 +297,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 24,
       name: 'Dark Chocolate Milkshake',
       slug: 'Dark-Chocolate-Milkshake',
       type: 'drink',
@@ -313,7 +309,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 25,
       name: 'Double Chicken Sauced',
       slug: 'Double-Chicken-Sauced',
       type: 'burger',
@@ -326,7 +321,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 26,
       name: 'Freshly Baked Bun',
       slug: 'Freshly-Baked-Bun',
       type: 'bread',
@@ -339,7 +333,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 27,
       name: 'Full Vegetables',
       slug: 'Full-Vegetables',
       type: 'salad',
@@ -352,7 +345,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 28,
       name: 'Greens & White Cheese',
       slug: 'Greens-&-White-Cheese',
       type: 'salad',
@@ -365,7 +357,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 29,
       name: 'Greens & Eggs',
       slug: 'Greens-&-Eggs',
       type: 'salad',
@@ -378,7 +369,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 30,
       name: 'Maghitarama',
       slug: 'Maghitarama',
       type: 'pizza',
@@ -391,7 +381,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 31,
       name: 'Melted Cheese & Bacon',
       slug: 'Melted-Cheese-&-Bacon',
       type: 'pizza',
@@ -404,7 +393,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 32,
       name: 'Mushroom & Melted Cheese',
       slug: 'Mushroom-&-Melted-Cheese',
       type: 'pizza',
@@ -417,7 +405,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 33,
       name: 'Olives & Melted White Cheese',
       slug: 'Olives-&-Melted-White-Cheese',
       type: 'pizza',
@@ -430,7 +417,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 34,
       name: 'Olives & Pepper',
       slug: 'Olives-&-Pepper',
       type: 'pizza',
@@ -443,7 +429,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 35,
       name: 'Oreo & Chocolate Milkshake',
       slug: 'Oreo-&-Chocolate-Milkshake',
       type: 'drink',
@@ -456,7 +441,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 36,
       name: 'Oreo & Strawberry Milkshake',
       slug: 'Oreo-&-Strawberry-Milkshake',
       type: 'drink',
@@ -469,7 +453,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 37,
       name: 'Oreo Milkshake',
       slug: 'Oreo-Milkshake',
       type: 'drink',
@@ -482,7 +465,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 38,
       name: 'Paros Red Wine',
       slug: 'Paros-Red-Wine',
       type: 'drink',
@@ -495,7 +477,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 39,
       name: 'Pastry',
       slug: 'Pastry',
       type: 'bread',
@@ -508,7 +489,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 40,
       name: 'Red Bacon',
       slug: 'Red-Bacon',
       type: 'pizza',
@@ -521,7 +501,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 41,
       name: 'Shrimp Dish',
       slug: 'Shrimp-Dish',
       type: 'salad',
@@ -534,7 +513,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 42,
       name: 'Soft Baked Bun',
       slug: 'Soft-Baked-Bun',
       type: 'bread',
@@ -547,7 +525,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 43,
       name: 'Strawberry Cupcake',
       slug: 'Strawberry-Cupcake',
       type: 'dessert',
@@ -560,7 +537,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 44,
       name: 'Strawberry Folds',
       slug: 'Strawberry-Folds',
       type: 'dessert',
@@ -573,7 +549,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 45,
       name: 'Tomato & Wors',
       slug: 'Tomato-&-Wors',
       type: 'salad',
@@ -586,7 +561,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 46,
       name: 'Tomato & Yellow Pepper',
       slug: 'Tomato-&-Yellow-Pepper',
       type: 'salad',
@@ -599,7 +573,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 47,
       name: 'Tomato Nectarine',
       slug: 'Tomato-Nectarine',
       type: 'salad',
@@ -612,7 +585,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 48,
       name: 'Waffle & Blackberry',
       slug: 'Waffle-&-Blackberry',
       type: 'dessert',
@@ -625,7 +597,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 49,
       name: 'Waffle & Strawberry',
       slug: 'Waffle-&-Strawberry',
       type: 'dessert',
@@ -638,7 +609,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 50,
       name: 'Waffle & Vanilla Cream',
       slug: 'Waffle-&-Vanilla-Cream',
       type: 'dessert',
@@ -651,7 +621,6 @@ const data = {
       numRatings: 22,
     },
     {
-      id: 51,
       name: 'Zinger Patty',
       slug: 'Zinger-Patty',
       type: 'burger',
