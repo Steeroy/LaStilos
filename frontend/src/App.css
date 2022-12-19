@@ -190,6 +190,18 @@ header {
   color: #4f4400;
 }
 
+.dropdown-menu {
+  --bs-dropdown-bg: var(--white) !important;
+  --bs-dropdown-min-width: fit-content !important;
+  --bs-dropdown-padding-x: 0px !important;
+  --bs-dropdown-padding-y: 4px !important;
+  --bs-dropdown-border-color: var(--primary600) !important;
+  --bs-dropdown-font-size: 1rem;
+  --bs-dropdown-font-family: "Nunito Sans", sans-serif !important;
+  --bs-dropdown-font-weight: 600 !important;
+  margin-top: 8px !important;
+}
+
 .menu__card {
   height: 112px;
   display: flex;

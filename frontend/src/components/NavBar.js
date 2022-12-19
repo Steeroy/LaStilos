@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Badge, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Badge, Navbar, NavbarBrand, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
@@ -27,8 +27,13 @@ const nav__links = [
 ];
 
 export default function NavBar() {
-  const { state } = useContext(Store);
-  const { cart } = state;
+  const { state, dispatch: ctxDispatch } = useContext(Store);
+  const { cart, userInfo } = state;
+
+  const signOutHandler = () => {
+    ctxDispatch({ type: 'USER_SIGNOUT' });
+    localStorage.removeItem('userInfo');
+  };
 
   return (
     <Navbar className="navbar">
@@ -69,11 +74,32 @@ export default function NavBar() {
             )}
           </NavLink>
 
-          <Link to="/signin">
-            <button className="button__primary_icon">
-              <span>Sign In</span> <Icon icon="mdi:sign-in" />
-            </button>
-          </Link>
+          {userInfo ? (
+            <NavDropdown
+              title={userInfo.name}
+              id="basic-nav-dropdown"
+              className="button__primary_icon"
+            >
+              <LinkContainer to="/profile">
+                <NavDropdown.Item>User Profile</NavDropdown.Item>
+              </LinkContainer>
+
+              <LinkContainer to="/orderhistory">
+                <NavDropdown.Item>Order History</NavDropdown.Item>
+              </LinkContainer>
+
+              <NavDropdown.Divider />
+              <Link className="dropdown-item" to="/" onClick={signOutHandler}>
+                Sign Out
+              </Link>
+            </NavDropdown>
+          ) : (
+            <Link to="/signin">
+              <button className="button__primary_icon">
+                <span>Sign In</span> <Icon icon="mdi:sign-in" />
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </Navbar>

@@ -12,6 +12,7 @@ import SignUp from './screens/SignUp/SignUp';
 import Favorites from './screens/Favorites/Favorites';
 import Footer from './components/Footer';
 import Product from './screens/Product/Product';
+import Shipping from './screens/Shipping/Shipping';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <main>
           <Routes>
+            <Route path="/shipping" element={<Shipping />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/favorites" element={<Favorites />} />
