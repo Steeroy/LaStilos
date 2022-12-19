@@ -8,8 +8,6 @@ import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
-import path from 'path';
-
 dotenv.config();
 
 mongoose
