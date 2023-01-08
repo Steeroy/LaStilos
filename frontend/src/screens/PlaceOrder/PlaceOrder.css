@@ -1,0 +1,203 @@
+.placeorder .page__banner {
+  margin-top: 0px;
+  margin-bottom: 64px;
+  background-image: url("../../assets/payment.png");
+  background-repeat: no-repeat;
+  height: 152px;
+}
+.placeorder .page__banner .page__banner_text {
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 84, 84, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeorder .page__banner .page__banner_text span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--primary600);
+}
+.placeorder .placeorder__details {
+  margin: 0px 64px 64px 64px;
+}
+.placeorder .placeorder__details .product__info {
+  margin-top: 32px;
+}
+.placeorder .placeorder__details .product__info .products_col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.placeorder .placeorder__details .product__info .products_col .products {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary700);
+  background: #fffcf5;
+}
+.placeorder .placeorder__details .product__info .products_col .products h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--secondary700);
+  margin: 0;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row .item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row .item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row .col-md-3,
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row h5 {
+  font-size: 18px;
+  color: var(--secondary800);
+  font-weight: 600;
+}
+.placeorder .placeorder__details .product__info .products_col .products .cart__items .item__row .col-md-3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary800);
+}
+.placeorder .placeorder__details .product__info .products_col .products h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--grey);
+}
+.placeorder .placeorder__details .product__info .products_col .address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary700);
+  background: #fffcf5;
+}
+.placeorder .placeorder__details .product__info .products_col .address h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--secondary700);
+  margin: 0;
+}
+.placeorder .placeorder__details .product__info .products_col .address .address_details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.placeorder .placeorder__details .product__info .products_col .address .address_details p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+}
+.placeorder .placeorder__details .product__info .products_col .address h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--grey);
+}
+.placeorder .placeorder__details .product__info .order__summary {
+  padding: 0px 64px !important;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type {
+  display: flex;
+  align-items: center;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row {
+  width: 100%;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-6 h3 {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-4 {
+  display: flex;
+  align-items: center;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-4 span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary900);
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-2 {
+  display: flex;
+  align-items: center;
+}
+.placeorder .placeorder__details .product__info .order__summary .payment__type .row .col-md-2 h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--grey);
+  margin: 0;
+}
+.placeorder .placeorder__details .product__info .order__summary h4 {
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--primary600);
+}
+.placeorder .placeorder__details .product__info .order__summary .row {
+  padding: 12px 0px;
+}
+.placeorder .placeorder__details .product__info .order__summary .row:not(:nth-last-child(1)) {
+  border-bottom: 1px solid var(--primary600);
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(3) .titles {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--grey);
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(3) .outcomes {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary900);
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(4) .titles {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--grey);
+}
+.placeorder .placeorder__details .product__info .order__summary .row:nth-child(4) .outcomes {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--secondary900);
+  padding-left: 0px;
+}/*# sourceMappingURL=PlaceOrder.css.map */

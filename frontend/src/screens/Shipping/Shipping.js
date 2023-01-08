@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Helmet from '../../components/Helmet';
 import { Icon } from '@iconify/react';
 
@@ -17,13 +17,45 @@ import { Store } from '../../Store';
 import { useNavigate } from 'react-router-dom';
 
 function Shipping() {
-  const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
-    cart: { cartItems },
+    cart: { cartItems, shippingAddress },
+    userInfo,
   } = state;
 
-  const checkoutHandler = () => {
+  const navigate = useNavigate();
+  const [fullname, setFullname] = useState(shippingAddress.fullname || '');
+  const [address, setAddress] = useState(shippingAddress.address || '');
+  const [city, setCity] = useState(shippingAddress.city || '');
+  const [zip, setZip] = useState(shippingAddress.zip || '');
+
+  useEffect(() => {
+    if (!userInfo) {
+      navigate('/signin?redirect=/shipping');
+    }
+  }, [userInfo, navigate]);
+
+  const checkoutHandler = (e) => {
+    e.preventDefault();
+
+    ctxDispatch({
+      type: 'SAVE_SHIPPING_ADDRESS',
+      payload: {
+        fullname,
+        address,
+        city,
+        zip,
+      },
+    });
+    localStorage.setItem(
+      'shippingAddress',
+      JSON.stringify({
+        fullname,
+        address,
+        city,
+        zip,
+      })
+    );
     navigate('/payment');
   };
 
@@ -48,7 +80,8 @@ function Shipping() {
                     type="text"
                     required
                     placeholder="E.g John Doe"
-                    //   onChange={(e) => setEmail(e.target.value)}
+                    value={fullname}
+                    onChange={(e) => setFullname(e.target.value)}
                   />
                 </FormGroup>
 
@@ -57,8 +90,9 @@ function Shipping() {
                   <FormControl
                     type="text"
                     required
+                    value={address}
                     placeholder="E.g 123 ABC Road"
-                    //   onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setAddress(e.target.value)}
                   />
                 </FormGroup>
 
@@ -69,7 +103,8 @@ function Shipping() {
                       type="text"
                       required
                       placeholder="E.g Rowland"
-                      //   onChange={(e) => setEmail(e.target.value)}
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
                     />
                   </FormGroup>
 
@@ -79,7 +114,8 @@ function Shipping() {
                       type="text"
                       required
                       placeholder="E.g 6211"
-                      //   onChange={(e) => setEmail(e.target.value)}
+                      value={zip}
+                      onChange={(e) => setZip(e.target.value)}
                     />
                   </FormGroup>
                 </div>
@@ -123,7 +159,8 @@ function Shipping() {
                   Subtotal:
                 </Col>
                 <Col md={6} className="outcomes">
-                  R123
+                  R
+                  {cartItems.reduce((a, c) => a + c.price * c.quantity, 0) + 20}
                 </Col>
               </Row>
               <Row>

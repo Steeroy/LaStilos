@@ -1,0 +1,219 @@
+.payment {
+  .page__banner {
+    margin-top: 0px;
+    margin-bottom: 64px;
+    background-image: url('../../assets/payment.png');
+    background-repeat: no-repeat;
+    height: 152px;
+
+    .page__banner_text {
+      width: 100%;
+      height: 100%;
+      background: rgba(84, 84, 84, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        color: var(--primary600);
+      }
+    }
+  }
+
+  .payment__info {
+    margin: 0px 64px 64px 64px;
+
+    .product__info {
+      margin-top: 32px;
+
+      .products_col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .products {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          padding: 16px 24px;
+          border-radius: 8px;
+          border: 1px solid var(--secondary700);
+          background: #fffcf5;
+
+          h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--secondary700);
+            margin: 0;
+          }
+
+          .cart__items {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .item__row {
+              .item__image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+
+              .col-md-3,
+              .col-md-6 {
+                display: flex;
+                align-items: center;
+              }
+
+              h5 {
+                font-size: 18px;
+                color: var(--secondary800);
+                font-weight: 600;
+              }
+
+              .col-md-3 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                color: var(--primary800);
+              }
+            }
+          }
+
+          h6 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--grey);
+          }
+        }
+
+        .address {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          padding: 16px 24px;
+          border-radius: 8px;
+          border: 1px solid var(--secondary700);
+          background: #fffcf5;
+
+          h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--secondary700);
+            margin: 0;
+          }
+
+          .address_details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            p {
+              font-size: 16px;
+              font-weight: 500;
+              color: var(--black);
+              margin: 0;
+            }
+          }
+
+          h6 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--grey);
+          }
+        }
+      }
+
+      .order__summary {
+        padding: 0px 64px !important;
+
+        .payment__button form {
+          display: grid;
+          grid-template-columns: auto auto;
+
+          .form-check {
+            display: flex !important;
+            align-items: center;
+            gap: 18px;
+
+            .form-check-input:checked {
+              background: var(--primary600);
+              border-color: var(--primary600);
+            }
+
+            .form-check-label {
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              color: var(--secondary800);
+            }
+          }
+        }
+
+        h4 {
+          font-weight: 700;
+          font-size: 25px;
+          color: var(--primary600);
+        }
+
+        .row {
+          padding: 12px 0px;
+
+          &:not(:nth-last-child(1)) {
+            border-bottom: 1px solid var(--primary600);
+          }
+
+          &:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+
+            gap: 8px;
+            justify-content: flex-start;
+            .titles {
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              color: var(--grey);
+            }
+
+            .outcomes {
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              color: var(--secondary900);
+            }
+          }
+
+          &:nth-child(4) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .titles {
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 700;
+              font-size: 24px;
+              color: var(--grey);
+            }
+
+            .outcomes {
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 700;
+              font-size: 20px;
+              color: var(--secondary900);
+              padding-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

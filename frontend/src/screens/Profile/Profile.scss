@@ -1,0 +1,83 @@
+.profile {
+  .page__banner {
+    margin-top: 0px;
+    margin-bottom: 64px;
+    background-image: url('../../assets/shipping.png');
+    background-repeat: no-repeat;
+    height: 152px;
+
+    .page__banner_text {
+      width: 100%;
+      height: 100%;
+      background: rgba(84, 84, 84, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        color: var(--primary600);
+      }
+    }
+  }
+
+  .profile__info {
+    margin: 0px 64px 64px 64px;
+
+    .col-md-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .profile__img {
+        width: 90%;
+        height: 90%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .col-md-8 {
+      form {
+        width: 80%;
+
+        label {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: var(--grey);
+        }
+
+        input {
+          padding: 0px 16px;
+          height: 40px;
+          font-family: 'Open Sans', serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--grey);
+          border: 1px solid var(--grey);
+          outline: none;
+
+          &::placeholder {
+            font-family: 'Open Sans', serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--grey);
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

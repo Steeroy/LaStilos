@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Badge, Navbar, NavbarBrand, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
@@ -33,6 +33,7 @@ export default function NavBar() {
   const signOutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   };
 
   return (

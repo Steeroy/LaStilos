@@ -1,0 +1,82 @@
+.profile .page__banner {
+  margin-top: 0px;
+  margin-bottom: 64px;
+  background-image: url("../../assets/shipping.png");
+  background-repeat: no-repeat;
+  height: 152px;
+}
+.profile .page__banner .page__banner_text {
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 84, 84, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile .page__banner .page__banner_text span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--primary600);
+}
+.profile .profile__info {
+  margin: 0px 64px 64px 64px;
+}
+.profile .profile__info .col-md-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile .profile__info .col-md-4 .profile__img {
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile .profile__info .col-md-4 .profile__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile .profile__info .col-md-8 form {
+  width: 80%;
+}
+.profile .profile__info .col-md-8 form label {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--grey);
+}
+.profile .profile__info .col-md-8 form input {
+  padding: 0px 16px;
+  height: 40px;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  outline: none;
+}
+.profile .profile__info .col-md-8 form input::-moz-placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.profile .profile__info .col-md-8 form input:-ms-input-placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.profile .profile__info .col-md-8 form input::placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.profile .profile__info .col-md-8 form input:focus {
+  outline: none;
+  box-shadow: none;
+}/*# sourceMappingURL=Profile.css.map */
