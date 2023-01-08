@@ -7,7 +7,10 @@ import data from './data.js';
 import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
+<<<<<<< HEAD
 import orderRouter from './routes/orderRoutes.js';
+=======
+>>>>>>> 5945bfc8b022ee0cdc58ce7d8dcc1a4ec92e838f
 
 dotenv.config();
 
