@@ -2,12 +2,15 @@ import React, { useContext, useState } from 'react';
 import { Form, FormControl, FormGroup, FormLabel } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
+import { toast } from 'react-toastify';
 
 import '../../App.css';
 import './SignIn.css';
 import Helmet from '../../components/Helmet';
 import axios from 'axios';
 import { Store } from '../../Store';
+import { useEffect } from 'react';
+import { getError } from '../../utils.js';
 
 function SignIn() {
   const navigate = useNavigate();
@@ -29,11 +32,26 @@ function SignIn() {
       });
       ctxDispatch({ type: 'USER_SIGNIN', payload: data });
       localStorage.setItem('userInfo', JSON.stringify(data));
+
+      toast.success(`User updated to ${data.name}`, {
+        position: toast.POSITION.TOP_CENTER,
+      });
+
       navigate(redirect || '/');
     } catch (err) {
-      alert('Invalid email or password');
+      toast.error(getError(err), {
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
     }
   };
+
+  const { userInfo } = state;
+
+  useEffect(() => {
+    if (userInfo) {
+      navigate(redirect);
+    }
+  }, [navigate, redirect, userInfo]);
 
   return (
     <Helmet title="Sign In">
