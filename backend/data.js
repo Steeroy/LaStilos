@@ -19,6 +19,35 @@ const data = {
         'https://res.cloudinary.com/dxpeznnto/image/upload/v1670804269/samples/people/smiling-man.jpg',
     },
   ],
+
+  team: [
+    {
+      name: 'Marcus Doe',
+      role: 'Manager',
+      imgUrl: '/images/marcus.png',
+    },
+    {
+      name: 'Morgan Row',
+      role: 'Senior Chef',
+      imgUrl: '/images/morgan.png',
+    },
+    {
+      name: 'Jaden Bun',
+      role: 'Supervisor',
+      imgUrl: '/images/jaden.png',
+    },
+    {
+      name: 'Aarna Signh',
+      role: 'Marketing Director',
+      imgUrl: '/images/aarna.png',
+    },
+    {
+      name: 'Anthony Johnson',
+      role: 'Delivery Manager',
+      imgUrl: '/images/anthony.png',
+    },
+  ],
+
   products: [
     {
       name: 'Bacon & Cheese',

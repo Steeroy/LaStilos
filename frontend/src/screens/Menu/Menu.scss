@@ -1,0 +1,165 @@
+.menu {
+  .page__banner {
+    margin-top: 0px;
+    margin-bottom: 64px;
+    background-image: url('../../assets/allfoods.png');
+    background-repeat: no-repeat;
+    height: 122px;
+
+    .page__banner_text {
+      width: 100%;
+      height: 100%;
+      background: rgba(84, 84, 84, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        color: var(--primary600);
+      }
+    }
+  }
+
+  .menu__details {
+    margin: 0px 64px 0px 64px;
+
+    .search__filters {
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .search {
+        height: 48px;
+        background: #fff8ee;
+        width: 310px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 4px;
+        padding: 0px 8px 0px 24px;
+        border: 2px solid var(--primary600);
+
+        input {
+          border: none;
+          background: transparent;
+          font-family: 'Open Sans';
+          font-weight: 400;
+          font-size: 14px;
+          color: var(--black);
+          outline: none;
+
+          &::placeholder {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--black);
+          }
+        }
+
+        span {
+          width: 32px;
+          height: 32px;
+          background: var(--primary600);
+          border-radius: 8px;
+          display: flex;
+          padding: 2px 2px;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 28px;
+            height: 28px;
+            color: var(--white);
+          }
+        }
+      }
+
+      .filters {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .sort,
+        .menu_sort {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          span {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--grey);
+          }
+
+          select {
+            width: 178px;
+            height: 48px;
+            background: #fff8ee;
+
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--primary600);
+            padding: 0px 8px;
+            outline: none;
+            font-size: 16px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 500;
+            color: var(--primary600);
+          }
+        }
+      }
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .row {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .product__col {
+          background: var(--white);
+          padding: 0px;
+          width: 18% !important;
+          border-radius: 16px;
+          box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+            0px 20px 32px rgba(96, 97, 112, 0.24);
+          margin-bottom: 24px;
+        }
+      }
+
+      .paginationBttns {
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        li {
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          color: var(--grey);
+        }
+
+        .selected {
+          color: var(--primary600);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

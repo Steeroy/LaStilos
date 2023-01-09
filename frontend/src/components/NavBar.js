@@ -34,6 +34,7 @@ export default function NavBar() {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
     localStorage.removeItem('shippingAddress');
+    localStorage.removeItem('favourites');
   };
 
   return (

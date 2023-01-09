@@ -19,6 +19,10 @@ const initialState = {
     paymentMethod: localStorage.getItem('paymentMethod')
       ? localStorage.getItem('paymentMethod')
       : '',
+
+    favouriteItems: localStorage.getItem('favourites')
+      ? JSON.parse(localStorage.getItem('favourites'))
+      : [],
   },
 };
 
@@ -39,6 +43,31 @@ function reducer(state, action) {
 
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
       return { ...state, cart: { ...state.cart, cartItems } };
+    }
+
+    case 'ADD_FAVOURITE': {
+      const newItem = action.payload;
+      const existItem = state.cart.favouriteItems.find(
+        (item) => item._id === newItem._id
+      );
+
+      const favouriteItems = existItem
+        ? state.cart.favouriteItems.map((item) =>
+            item._id === existItem._id ? newItem : item
+          )
+        : [...state.cart.favouriteItems, newItem];
+
+      localStorage.setItem('favourites', JSON.stringify(favouriteItems));
+      return { ...state, cart: { ...state.cart, favouriteItems } };
+    }
+
+    case 'REMOVE_FAVOURITE': {
+      const favouriteItems = state.cart.favouriteItems.filter(
+        (item) => item._id !== action.payload._id
+      );
+
+      localStorage.setItem('favourites', JSON.stringify(favouriteItems));
+      return { ...state, cart: { ...state.cart, favouriteItems } };
     }
 
     case 'CART_REMOVE_ITEM': {

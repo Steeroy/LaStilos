@@ -1,0 +1,155 @@
+.menu .page__banner {
+  margin-top: 0px;
+  margin-bottom: 64px;
+  background-image: url("../../assets/allfoods.png");
+  background-repeat: no-repeat;
+  height: 122px;
+}
+.menu .page__banner .page__banner_text {
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 84, 84, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .page__banner .page__banner_text span {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--primary600);
+}
+.menu .menu__details {
+  margin: 0px 64px 0px 64px;
+}
+.menu .menu__details .search__filters {
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .menu__details .search__filters .search {
+  height: 48px;
+  background: #fff8ee;
+  width: 310px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 0px 8px 0px 24px;
+  border: 2px solid var(--primary600);
+}
+.menu .menu__details .search__filters .search input {
+  border: none;
+  background: transparent;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  outline: none;
+}
+.menu .menu__details .search__filters .search input::-moz-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+}
+.menu .menu__details .search__filters .search input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+}
+.menu .menu__details .search__filters .search input::placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+}
+.menu .menu__details .search__filters .search span {
+  width: 32px;
+  height: 32px;
+  background: var(--primary600);
+  border-radius: 8px;
+  display: flex;
+  padding: 2px 2px;
+  align-items: center;
+  justify-content: center;
+}
+.menu .menu__details .search__filters .search span svg {
+  width: 28px;
+  height: 28px;
+  color: var(--white);
+}
+.menu .menu__details .search__filters .filters {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.menu .menu__details .search__filters .filters .sort,
+.menu .menu__details .search__filters .filters .menu_sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu .menu__details .search__filters .filters .sort span,
+.menu .menu__details .search__filters .filters .menu_sort span {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--grey);
+}
+.menu .menu__details .search__filters .filters .sort select,
+.menu .menu__details .search__filters .filters .menu_sort select {
+  width: 178px;
+  height: 48px;
+  background: #fff8ee;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary600);
+  padding: 0px 8px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  color: var(--primary600);
+}
+.menu .menu__details .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu__details .products .row {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu__details .products .row .product__col {
+  background: var(--white);
+  padding: 0px;
+  width: 18% !important;
+  border-radius: 16px;
+  box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+  margin-bottom: 24px;
+}
+.menu .menu__details .products .paginationBttns {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.menu .menu__details .products .paginationBttns li {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--grey);
+}
+.menu .menu__details .products .paginationBttns .selected {
+  color: var(--primary600);
+  font-weight: 700;
+}/*# sourceMappingURL=Menu.css.map */

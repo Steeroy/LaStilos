@@ -7,10 +7,8 @@ import data from './data.js';
 import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
-<<<<<<< HEAD
 import orderRouter from './routes/orderRoutes.js';
-=======
->>>>>>> 5945bfc8b022ee0cdc58ce7d8dcc1a4ec92e838f
+import teamRouter from './routes/teamRoutes.js';
 
 dotenv.config();
 
@@ -36,6 +34,7 @@ app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
+app.use('/api/teams', teamRouter);
 
 app.get('/api/preset', (req, res) => {
   res.send(process.env.uploadPreset);

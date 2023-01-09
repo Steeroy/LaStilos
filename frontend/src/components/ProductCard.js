@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Rating from './Rating';
 import { Icon } from '@iconify/react';
@@ -12,6 +12,8 @@ function ProductCard({ product }) {
   const {
     cart: { cartItems },
   } = state;
+
+  const [clicked, setClicked] = useState('no');
 
   const addToCartHandler = async (item) => {
     const existItem = cartItems.find((x) => x._id === item._id);
@@ -28,6 +30,16 @@ function ProductCard({ product }) {
       type: 'CART_ADD_ITEM',
       payload: { ...item, quantity },
     });
+  };
+
+  const addToFavouritesHandler = (item) => {
+    ctxDispatch({ type: 'ADD_FAVOURITE', payload: item });
+    setClicked('yes');
+  };
+
+  const removeToFavouritesHandler = (item) => {
+    ctxDispatch({ type: 'REMOVE_FAVOURITE', payload: item });
+    setClicked('no');
   };
 
   return (
@@ -53,7 +65,14 @@ function ProductCard({ product }) {
           <span>Add to Cart</span>
           <Icon icon="material-symbols:shopping-bag-outline" />
         </button>
-        <button className="button__small_heart">
+        <button
+          className="button__small_heart"
+          onClick={() =>
+            clicked === 'no'
+              ? addToFavouritesHandler(product)
+              : removeToFavouritesHandler(product)
+          }
+        >
           <Icon icon="mdi:cards-heart-outline" />
         </button>
       </div>
