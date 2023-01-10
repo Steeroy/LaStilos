@@ -153,3 +153,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .page__banner {
+    margin-bottom: 40px !important;
+  }
+
+  .contact__info {
+    margin: 0px 20px !important;
+
+    h1 {
+      font-size: 38px !important;
+    }
+
+    .row {
+      flex-direction: column !important;
+      gap: 32px !important;
+    }
+  }
+}
