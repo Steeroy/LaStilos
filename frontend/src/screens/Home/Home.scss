@@ -429,13 +429,22 @@
 @media only screen and (max-width: 500px) {
   .services__section {
     .services {
-      padding: 8px 8px !important;
+      padding: 14px 12px !important;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px !important;
     }
   }
 
   .menu__section {
     .menu__container {
       margin-bottom: 32px !important;
+
+      .menu__row {
+        gap: 18px !important;
+        justify-content: flex-start;
+        overflow-x: scroll !important;
+      }
     }
 
     .products__container {
@@ -444,4 +453,7 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: 400px) {
 }
