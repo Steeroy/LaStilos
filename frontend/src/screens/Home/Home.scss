@@ -392,7 +392,7 @@
   .products__container {
     .row {
       display: grid !important;
-      grid-template-columns: auto auto auto !important;
+      grid-template-columns: 30% 30% 30% !important;
 
       .product__col {
         width: 90% !important;
@@ -455,11 +455,8 @@
 
     .products__container {
       .row {
-        grid-template-columns: auto auto !important;
+        grid-template-columns: 42% 42% !important;
       }
     }
   }
-}
-
-@media only screen and (max-width: 400px) {
 }

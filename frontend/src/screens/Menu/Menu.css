@@ -194,11 +194,11 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .page__banner {
+    margin-bottom: 38px !important;
+  }
   .menu__details {
     margin: 0px 20px !important;
-  }
-  .menu__details .page__banner {
-    margin-bottom: 32px !important;
   }
   .menu__details .search__filters .search {
     height: 36px !important;
@@ -223,12 +223,8 @@
   .menu__details .search__filters .search input::placeholder {
     font-size: 12px !important;
   }
-  .menu__details .search__filters .filters .sort select {
-    height: 36px !important;
-    width: 96px !important;
-    gap: 0px !important;
-    padding: 0px 4px 0px 4px !important;
-    font-size: 12px !important;
+  .menu__details .search__filters .filters {
+    display: none !important;
   }
   .menu__details .products .row {
     grid-template-columns: 42% 42% !important;
