@@ -325,6 +325,11 @@
     gap: 18px !important;
     justify-content: flex-start;
     overflow-x: scroll !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  .menu__section .menu__container .menu__row::-webkit-scrollbar {
+    display: none !important;
   }
   .menu__section .products__container .row {
     grid-template-columns: auto auto !important;
