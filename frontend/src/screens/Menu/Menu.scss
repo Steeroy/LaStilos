@@ -134,7 +134,7 @@
         .product__col {
           background: var(--white);
           padding: 0px;
-          width: 18% !important;
+          width: 18%;
           border-radius: 16px;
           box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
             0px 20px 32px rgba(96, 97, 112, 0.24);
@@ -159,6 +159,113 @@
           color: var(--primary600);
           font-weight: 700;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu__details {
+    margin: 0px 32px !important;
+
+    .search__filters {
+      margin-bottom: 38px !important;
+
+      .search {
+        height: 42px !important;
+
+        width: 280px !important;
+
+        span {
+          width: 28px !important;
+          height: 28px !important;
+
+          svg {
+            width: 24px !important;
+            height: 24px !important;
+          }
+        }
+      }
+
+      .filters {
+        select {
+          height: 42px !important;
+          width: 168px !important;
+        }
+      }
+    }
+
+    .products {
+      .row {
+        display: grid !important;
+        grid-template-columns: 25% 25% 25%;
+
+        .product__col {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    .row {
+      grid-template-columns: 28% 28% 28% !important;
+
+      .product__col {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu__details {
+    margin: 0px 20px !important;
+
+    .page__banner {
+      margin-bottom: 32px !important;
+    }
+
+    .search__filters {
+      .search {
+        height: 36px !important;
+        width: 182px !important;
+        gap: 0px !important;
+        padding: 0px 4px 0px 16px !important;
+
+        span {
+          width: 24px !important;
+          height: 24px !important;
+        }
+
+        input {
+          width: 80% !important;
+          font-size: 12px !important;
+
+          &::placeholder {
+            font-size: 12px !important;
+          }
+        }
+      }
+
+      .filters {
+        .sort {
+          select {
+            height: 36px !important;
+            width: 96px !important;
+            gap: 0px !important;
+            padding: 0px 4px 0px 4px !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+
+    .products {
+      .row {
+        grid-template-columns: 42% 42% !important;
       }
     }
   }

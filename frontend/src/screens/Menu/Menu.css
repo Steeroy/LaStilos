@@ -132,7 +132,7 @@
 .menu .menu__details .products .row .product__col {
   background: var(--white);
   padding: 0px;
-  width: 18% !important;
+  width: 18%;
   border-radius: 16px;
   box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
   margin-bottom: 24px;
@@ -152,4 +152,85 @@
 .menu .menu__details .products .paginationBttns .selected {
   color: var(--primary600);
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu__details {
+    margin: 0px 32px !important;
+  }
+  .menu__details .search__filters {
+    margin-bottom: 38px !important;
+  }
+  .menu__details .search__filters .search {
+    height: 42px !important;
+    width: 280px !important;
+  }
+  .menu__details .search__filters .search span {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .menu__details .search__filters .search span svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .menu__details .search__filters .filters select {
+    height: 42px !important;
+    width: 168px !important;
+  }
+  .menu__details .products .row {
+    display: grid !important;
+    grid-template-columns: 25% 25% 25%;
+  }
+  .menu__details .products .row .product__col {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .products .row {
+    grid-template-columns: 28% 28% 28% !important;
+  }
+  .products .row .product__col {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .menu__details {
+    margin: 0px 20px !important;
+  }
+  .menu__details .page__banner {
+    margin-bottom: 32px !important;
+  }
+  .menu__details .search__filters .search {
+    height: 36px !important;
+    width: 182px !important;
+    gap: 0px !important;
+    padding: 0px 4px 0px 16px !important;
+  }
+  .menu__details .search__filters .search span {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .menu__details .search__filters .search input {
+    width: 80% !important;
+    font-size: 12px !important;
+  }
+  .menu__details .search__filters .search input::-moz-placeholder {
+    font-size: 12px !important;
+  }
+  .menu__details .search__filters .search input:-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+  .menu__details .search__filters .search input::placeholder {
+    font-size: 12px !important;
+  }
+  .menu__details .search__filters .filters .sort select {
+    height: 36px !important;
+    width: 96px !important;
+    gap: 0px !important;
+    padding: 0px 4px 0px 4px !important;
+    font-size: 12px !important;
+  }
+  .menu__details .products .row {
+    grid-template-columns: 42% 42% !important;
+  }
 }/*# sourceMappingURL=Menu.css.map */
