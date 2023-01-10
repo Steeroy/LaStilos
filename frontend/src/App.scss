@@ -839,6 +839,12 @@ footer {
       }
     }
   }
+
+  .checkout-steps {
+    .col {
+      font-size: 14px !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -938,6 +944,13 @@ footer {
         justify-content: flex-start !important;
         align-items: center;
       }
+    }
+  }
+
+  .checkout-steps {
+    .col {
+      align-items: flex-start !important;
+      text-align: center !important;
     }
   }
 }

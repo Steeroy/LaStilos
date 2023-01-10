@@ -738,6 +738,9 @@ footer {
     width: 16px !important;
     height: 16px !important;
   }
+  .checkout-steps .col {
+    font-size: 14px !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .button__primary_icon,
@@ -819,6 +822,10 @@ footer {
     gap: 14px;
     justify-content: flex-start !important;
     align-items: center;
+  }
+  .checkout-steps .col {
+    align-items: flex-start !important;
+    text-align: center !important;
   }
 }
 @media only screen and (max-width: 500px) {
