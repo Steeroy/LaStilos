@@ -1,7 +1,7 @@
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
-import { generateToken, isAuth } from '../utils.js';
+import { AdminToken, generateToken, isAuth } from '../utils.js';
 import bcrypt from 'bcryptjs';
 
 const userRouter = express.Router();
@@ -50,6 +50,8 @@ userRouter.post(
   })
 );
 
+// Update details
+
 userRouter.put(
   '/profile',
   isAuth,
@@ -74,6 +76,89 @@ userRouter.put(
       });
     } else {
       res.status(404).send({ message: 'User Not Found' });
+    }
+  })
+);
+
+// Delete user
+userRouter.delete(
+  '/:id',
+  isAuth,
+  expressAsyncHandler(async (req, res) => {
+    try {
+      await User.findByIdAndDelete(req.params.id);
+      res.status(200).send({ message: 'User has been deleted ' });
+    } catch (err) {
+      res.status(500).send(err);
+    }
+  })
+);
+
+//Get user
+userRouter.get(
+  '/find/:id',
+  AdminToken,
+  expressAsyncHandler(async (req, res) => {
+    try {
+      const user = await User.findById(req.params.id);
+      res.status(200).send({
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+        isAdmin: user.isAdmin,
+        imgUrl: user.imgUrl,
+        token: generateToken(user),
+      });
+    } catch (err) {
+      res.status(500).send(err);
+    }
+  })
+);
+
+//Get all users
+userRouter.get(
+  '/',
+  AdminToken,
+  expressAsyncHandler(async (req, res) => {
+    const query = req.query.new;
+    try {
+      const users = query
+        ? await User.find().sort({ _id: -1 }).limit(2)
+        : await User.find();
+      res.status(200).send(users);
+    } catch (err) {
+      res.status(500).send(err);
+    }
+  })
+);
+
+//Get user stats
+userRouter.get(
+  '/stats',
+  AdminToken,
+  expressAsyncHandler(async (req, res) => {
+    const date = new Date();
+
+    const lastYear = new Date(date.setFullYear(date.getFullYear() - 1));
+
+    try {
+      const data = await User.aggregate([
+        { $match: { createdAt: { $gte: lastYear } } },
+        {
+          $project: {
+            month: { $month: '$createdAt' },
+          },
+        },
+        {
+          $group: {
+            _id: '$month',
+            total: { $sum: 1 },
+          },
+        },
+      ]);
+      res.status(200).send(data);
+    } catch (err) {
+      res.status(500).send(err);
     }
   })
 );

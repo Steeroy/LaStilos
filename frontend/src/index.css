@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap');
 
-body {
+#root {
   overflow-x: hidden;
-  position: relative;
   background: #fff7ef;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -51,4 +55,22 @@ p {
   --grey: #646d7c;
   --black: #121212;
   --white: #fcfcfc;
+}
+
+@media only screen and (max-width: 992px) {
+  section {
+    margin: 96px 56px 0px 56px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    margin: 72px 36px 0px 36px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    margin: 48px 20px 0px 20px !important;
+  }
 }

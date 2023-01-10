@@ -177,9 +177,9 @@ function Home() {
               ) : (
                 allProducts &&
                 allProducts.map((item) => (
-                  <Col md={2} className="product__col" key={item.id}>
+                  <div className="product__col" key={item.id}>
                     <ProductCard product={item} />
-                  </Col>
+                  </div>
                 ))
               )}
             </Row>

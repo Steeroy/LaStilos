@@ -144,7 +144,7 @@
 .menu__section .products__container .row .product__col {
   background: var(--white);
   padding: 0px;
-  width: 18% !important;
+  width: 18%;
   border-radius: 16px;
   box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
   margin-bottom: 24px;
@@ -184,4 +184,141 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .section__title {
+    font-size: 32px !important;
+    margin-bottom: 42px !important;
+  }
+  .hero__section {
+    margin: 0px 56px !important;
+  }
+  .hero__section .row .hero__content .hero__texts h1 {
+    font-size: 52px !important;
+  }
+  .services__section .services {
+    padding: 28px 28px !important;
+  }
+  .services__section .services .service {
+    gap: 18px !important;
+  }
+  .services__section .services .service svg {
+    height: 32px !important;
+    width: 32px !important;
+  }
+  .services__section .services .service .service__content h5 {
+    font-size: 18px !important;
+  }
+  .menu__section .menu__container {
+    margin-bottom: 48px !important;
+  }
+  .menu__section .menu__row {
+    margin: 0px !important;
+  }
+  .menu__section .products__container .row {
+    flex-wrap: wrap;
+  }
+  .menu__section .products__container .row .product__col {
+    width: 22%;
+  }
+  .recom__row .reco__image_col {
+    display: none;
+  }
+  .recom__row .reco__content_col {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__section {
+    margin: 0px 36px !important;
+  }
+  .hero__section .row .hero__content .hero__texts h1 {
+    font-size: 42px !important;
+  }
+  .services__section .services .service {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .services__section .services .service .service__content {
+    align-items: center !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section__title {
+    font-size: 24px !important;
+    margin-bottom: 28px !important;
+  }
+  .whole_hero {
+    padding: 64px 0px !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .hero__section {
+    margin: 0px 20px !important;
+  }
+  .hero__section .hero__content {
+    width: 100% !important;
+    gap: 8px !important;
+  }
+  .hero__section .hero__content .hero__buttons {
+    gap: 12px !important;
+  }
+  .hero__section .hero__img_col {
+    display: none;
+  }
+  .services__section .services {
+    padding: 22px 22px !important;
+  }
+  .services__section .services .service {
+    gap: 12px !important;
+  }
+  .services__section .services .service svg {
+    height: 24px !important;
+    width: 24px !important;
+  }
+  .services__section .services .service .service__content {
+    gap: 0px !important;
+  }
+  .services__section .services .service .service__content h5 {
+    font-size: 16px !important;
+  }
+  .services__section .services .service .service__content p {
+    font-size: 10px !important;
+    text-align: center;
+  }
+  .products__container .row {
+    display: grid !important;
+    grid-template-columns: auto auto auto !important;
+  }
+  .products__container .row .product__col {
+    width: 90% !important;
+  }
+  .recommendation__section .recom__row .reco__content_col .reco__content {
+    gap: 18px !important;
+  }
+  .recommendation__section .recom__row .reco__content_col .reco__content .slick-slider {
+    width: 90% !important;
+  }
+  .recommendation__section .recom__row .reco__content_col .reco__content .slick-slider .testimonial {
+    padding: 0px 8px !important;
+    flex-direction: column;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .recommendation__section .recom__row .reco__content_col .reco__content .slick-slider .testimonial .test__content {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .services__section .services {
+    padding: 8px 8px !important;
+  }
+  .menu__section .menu__container {
+    margin-bottom: 32px !important;
+  }
+  .menu__section .products__container .row {
+    grid-template-columns: auto auto !important;
+  }
 }/*# sourceMappingURL=Home.css.map */

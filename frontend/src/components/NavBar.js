@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { Badge, Navbar, NavbarBrand, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
@@ -37,6 +37,9 @@ export default function NavBar() {
     localStorage.removeItem('favourites');
   };
 
+  const menuRef = useRef(null);
+  const toggleMenu = () => menuRef.current.classList.toggle('show__menu');
+
   return (
     <Navbar className="navbar">
       <div className="nav__content">
@@ -46,7 +49,7 @@ export default function NavBar() {
           </NavbarBrand>
         </LinkContainer>
 
-        <div className="navigation">
+        <div className="navigation" ref={menuRef} onClick={toggleMenu}>
           <div className="menu d-flex gap-5">
             {nav__links.map((item, index) => (
               <NavLink
@@ -102,6 +105,10 @@ export default function NavBar() {
               </button>
             </Link>
           )}
+
+          <div className="mobile__menu" onClick={toggleMenu}>
+            <Icon icon="charm:menu-hamburger" />
+          </div>
         </div>
       </div>
     </Navbar>
