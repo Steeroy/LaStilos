@@ -153,4 +153,163 @@
   font-size: 25px;
   margin: 0;
   color: var(--primary600);
+}
+
+@media only screen and (max-width: 992px) {
+  .title__sec {
+    margin-bottom: 32px !important;
+    font-size: 32px !important;
+  }
+  .banner__section {
+    margin-bottom: 48px !important;
+  }
+  .banner__section .banner__text {
+    padding: 6px 26px !important;
+    gap: 12px !important;
+  }
+  .banner__section .banner__text h1 {
+    font-size: 38px !important;
+  }
+  .banner__section .banner__text p {
+    font-size: 14px !important;
+  }
+  .banner__section .banner__img {
+    width: 28% !important;
+  }
+  .banner__section .banner__img img {
+    width: 80% !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .about__content {
+    margin: 0px 56px !important;
+  }
+  .about__content .about__services {
+    margin-bottom: 48px !important;
+  }
+  .about__content .about__services .services__offered {
+    width: 100% !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+    padding: 26px 48px !important;
+  }
+  .about__content .about__services .services__offered .service {
+    gap: 12px !important;
+  }
+  .about__content .about__services .services__offered .service svg {
+    width: 52px !important;
+  }
+  .about__content .about__team {
+    gap: 32px !important;
+  }
+  .about__content .about__team h2 {
+    margin-bottom: 0 !important;
+  }
+  .about__content .about__team p {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .about__content .about__team .team__imgs .row {
+    display: grid !important;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__content .about__team .team__imgs .row .member__card {
+    width: 100% !important;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .title__sec {
+    font-size: 28px !important;
+    margin-bottom: 28px !important;
+  }
+  .banner__section {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .banner__section .banner__content {
+    padding: 24px 36px !important;
+    justify-content: space-between !important;
+  }
+  .banner__section .banner__content .banner__text {
+    padding: 0px 0px !important;
+    gap: 8px !important;
+  }
+  .banner__section .banner__content .banner__text p {
+    font-size: 12px !important;
+  }
+  .about__content {
+    margin: 0px 36px !important;
+  }
+  .about__content .about__services {
+    margin-bottom: 36px !important;
+  }
+  .about__content .about__services .services__offered {
+    padding: 22px 36px !important;
+  }
+  .about__content .about__services .services__offered .service {
+    gap: 8px !important;
+  }
+  .about__content .about__services .services__offered .service svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .about__content .about__services .services__offered .service .service__content h5 {
+    font-size: 16px !important;
+  }
+  .about__content .about__services .services__offered .service .service__content p {
+    font-size: 12px !important;
+    text-align: center;
+  }
+  .about__content .about__services .services__offered .line_sep {
+    display: none !important;
+  }
+  .about__team .team__imgs .row .member__card {
+    gap: 8px !important;
+    margin-bottom: 48px !important;
+  }
+  .about__team .team__imgs .row .member__card .member__img {
+    width: 50% !important;
+  }
+  .about__team .team__imgs .row .member__card h6 {
+    font-size: 14px !important;
+  }
+  .about__team .team__imgs .row .member__card h4 {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .banner__section .banner__content {
+    padding: 18px 20px !important;
+  }
+  .banner__section .banner__content .banner__text {
+    width: 100% !important;
+  }
+  .banner__section .banner__content .banner__text h1 {
+    font-size: 28px !important;
+  }
+  .banner__section .banner__content .banner__img {
+    display: none !important;
+  }
+  .about__content {
+    margin: 0px 20px !important;
+  }
+  .about__content .about__services {
+    margin-bottom: 28px !important;
+  }
+  .about__content .about__services .services__offered {
+    flex-direction: column !important;
+    gap: 18px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .about__content .member__card h6 {
+    text-align: center;
+  }
+  .about__content .member__card h4 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=About.css.map */
