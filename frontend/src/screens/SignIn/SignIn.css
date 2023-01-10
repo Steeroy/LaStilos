@@ -1,3 +1,6 @@
+.sign__in {
+  margin: 0px !important;
+}
 .sign__in h1 {
   font-weight: 600;
   font-size: 48px;
@@ -43,4 +46,32 @@
 .sign__in form input:focus {
   outline: none;
   box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .sign__in h1 {
+    margin: 28px 0px !important;
+  }
+  .sign__in form {
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sign__in h1 {
+    font-size: 32px !important;
+  }
+  .sign__in form {
+    width: 70% !important;
+  }
+  .sign__in form label {
+    font-size: 14px !important;
+  }
+  .sign__in form input {
+    height: 34px !important;
+    font-size: 12px !important;
+    padding: 0px 12px !important;
+  }
+  .sign__in form div:nth-child(4) {
+    font-size: 14px !important;
+  }
 }/*# sourceMappingURL=SignIn.css.map */

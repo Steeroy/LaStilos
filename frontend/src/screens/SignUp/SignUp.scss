@@ -1,5 +1,6 @@
 .sign__in {
-  //background: greenyellow;
+  width: 100% !important;
+  max-width: 100% !important;
 
   h1 {
     font-weight: 600;
@@ -38,6 +39,52 @@
         outline: none;
         box-shadow: none;
       }
+    }
+  }
+
+  form div:nth-child(1) {
+    input {
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sign__in {
+    h1 {
+      margin: 28px 0px !important;
+    }
+
+    form {
+      width: 50% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sign__in {
+    h1 {
+      font-size: 32px !important;
+    }
+
+    form {
+      width: 70% !important;
+
+      label {
+        font-size: 14px !important;
+      }
+
+      input {
+        height: 34px !important;
+        font-size: 12px !important;
+        padding: 0px 12px !important;
+      }
+    }
+
+    form div:nth-child(5) {
+      font-size: 14px !important;
     }
   }
 }
