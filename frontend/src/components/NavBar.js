@@ -81,7 +81,7 @@ export default function NavBar() {
 
           {userInfo ? (
             <NavDropdown
-              title={userInfo.name}
+              title={userInfo.name.split(' ')[0]}
               id="basic-nav-dropdown"
               className="button__primary_icon"
             >
