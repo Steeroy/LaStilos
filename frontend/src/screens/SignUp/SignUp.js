@@ -56,6 +56,8 @@ function SignUp() {
         .then((response) => {
           setImgUrl(response.data.url);
         });
+      
+      console.log(imgUrl)
 
       const { data } = await axios.post('/api/users/signup', {
         name,
