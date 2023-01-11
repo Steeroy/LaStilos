@@ -31,22 +31,26 @@ userRouter.post(
 userRouter.post(
   '/signup',
   expressAsyncHandler(async (req, res) => {
-    const newUser = new User({
-      name: req.body.name,
-      email: req.body.email,
-      password: bcrypt.hashSync(req.body.password),
-      imgUrl: req.body.imgUrl,
-    });
+    try {
+      const newUser = new User({
+        name: req.body.name,
+        email: req.body.email,
+        password: bcrypt.hashSync(req.body.password),
+        imgUrl: req.body.imgUrl,
+      });
 
-    const user = await newUser.save();
-    res.send({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      isAdmin: user.isAdmin,
-      imgUrl: user.imgUrl,
-      token: generateToken(user),
-    });
+      const user = await newUser.save();
+      res.send({
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+        isAdmin: user.isAdmin,
+        imgUrl: user.imgUrl,
+        token: generateToken(user),
+      });
+    } catch (err) {
+      res.status(500).send({ message: 'Encounted an error, try again.' });
+    }
   })
 );
 
