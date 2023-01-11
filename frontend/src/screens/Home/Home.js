@@ -98,7 +98,7 @@ function Home() {
                       <Icon icon="ic:outline-shopping-cart" />
                     </button>
                   </Link>
-                  <Link to="/orders">
+                  <Link to="/orderhistory">
                     <button className="button__secondary_icon">
                       <span>View Orders</span>
                       <Icon icon="mdi:order-bool-descending-variant" />
