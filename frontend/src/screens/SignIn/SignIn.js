@@ -20,6 +20,21 @@ function SignIn() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [see, setSee] = useState(true);
+  const [textPass, setTextPass] = useState('password');
+  const [type, setType] = useState(false);
+
+  const See = () => {
+    if (textPass === 'password') {
+      setTextPass('text');
+      setSee(false);
+      setType(true);
+    } else {
+      setTextPass('password');
+      setSee(true);
+      setType(false);
+    }
+  };
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
 
@@ -70,11 +85,17 @@ function SignIn() {
 
           <FormGroup className="mb-3" controlId="password">
             <FormLabel>Password</FormLabel>
-            <FormControl
-              type="password"
-              required
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="password__group">
+              <FormControl
+                type={textPass}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <Icon
+                onClick={See}
+                icon={see ? 'ic:outline-remove-red-eye' : 'mdi:eye-off-outline'}
+              />
+            </div>
           </FormGroup>
           <div className="mb-3">
             <button type="submit" className="button__primary_icon">

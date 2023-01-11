@@ -79,4 +79,42 @@
 .profile .profile__info .col-md-8 form input:focus {
   outline: none;
   box-shadow: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .profile .page__banner {
+    margin-bottom: 52px !important;
+  }
+  .profile .profile__info {
+    margin: 16px 56px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .profile .page__banner {
+    margin-bottom: 42px !important;
+  }
+  .profile .profile__info {
+    margin: 8px 36px !important;
+  }
+  .profile .profile__info .row {
+    flex-direction: column !important;
+    gap: 42px !important;
+    align-items: center;
+  }
+  .profile .profile__info .row .col-md-4 {
+    width: 70% !important;
+  }
+  .profile .profile__info .row .col-md-8 {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .profile .page__banner {
+    margin-bottom: 42px !important;
+  }
+  .profile .profile__info {
+    margin: 4px 20px !important;
+  }
 }/*# sourceMappingURL=Profile.css.map */

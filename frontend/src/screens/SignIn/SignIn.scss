@@ -39,6 +39,42 @@
         box-shadow: none;
       }
     }
+
+    .password__group {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0px 16px;
+      border: 1px solid var(--grey);
+      background: #fff;
+      border-radius: 6px !important;
+
+      input {
+        padding: 0px !important;
+        height: 100% !important;
+        font-family: 'Open Sans', serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--grey);
+        border: none !important;
+
+        outline: none;
+
+        &::placeholder {
+          font-family: 'Open Sans', serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: var(--grey);
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
   }
 }
 

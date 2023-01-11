@@ -22,6 +22,18 @@ function SignUp() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [see, setSee] = useState(true);
+  const [textPass, setTextPass] = useState('password');
+
+  const See = () => {
+    if (textPass === 'password') {
+      setTextPass('text');
+      setSee(false);
+    } else {
+      setTextPass('password');
+      setSee(true);
+    }
+  };
 
   const { dispatch: ctxDispatch } = useContext(Store);
 
@@ -31,19 +43,19 @@ function SignUp() {
     try {
       const formdata = new FormData();
       formdata.append('file', image);
+
       const presetString = await axios.get('/api/preset');
+
       formdata.append('upload_preset', presetString.data);
 
-      const img = await axios
+      await axios
         .post(
           'https://api.cloudinary.com/v1_1/dxpeznnto/image/upload',
           formdata
         )
         .then((response) => {
-          return response.data.url;
+          setImgUrl(response.data.url);
         });
-
-      setImgUrl(img);
 
       const { data } = await axios.post('/api/users/signup', {
         name,
@@ -103,11 +115,17 @@ function SignUp() {
 
           <FormGroup className="mb-3" controlId="password">
             <FormLabel>Password</FormLabel>
-            <FormControl
-              type="password"
-              required
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="password__group">
+              <FormControl
+                type={textPass}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <Icon
+                onClick={See}
+                icon={see ? 'ic:outline-remove-red-eye' : 'mdi:eye-off-outline'}
+              />
+            </div>
           </FormGroup>
           <div className="mb-3">
             <button type="submit" className="button__primary_icon">

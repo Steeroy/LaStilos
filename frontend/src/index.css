@@ -3,6 +3,7 @@
 #root {
   overflow-x: hidden;
   background: #fff7ef;
+  position: relative;
 }
 
 body {

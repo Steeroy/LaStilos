@@ -48,6 +48,49 @@
   outline: none;
   box-shadow: none;
 }
+.sign__in form .password__group {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0px 16px;
+  border: 1px solid var(--grey);
+  background: #fff;
+  border-radius: 6px !important;
+}
+.sign__in form .password__group input {
+  padding: 0px !important;
+  height: 100% !important;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  border: none !important;
+  outline: none;
+}
+.sign__in form .password__group input::-moz-placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.sign__in form .password__group input:-ms-input-placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.sign__in form .password__group input::placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey);
+}
+.sign__in form .password__group input:focus {
+  outline: none;
+  box-shadow: none;
+}
 .sign__in form div:nth-child(1) input {
   display: flex;
   align-items: center !important;
