@@ -22,17 +22,14 @@ function SignIn() {
   const [password, setPassword] = useState('');
   const [see, setSee] = useState(true);
   const [textPass, setTextPass] = useState('password');
-  const [type, setType] = useState(false);
 
   const See = () => {
     if (textPass === 'password') {
       setTextPass('text');
       setSee(false);
-      setType(true);
     } else {
       setTextPass('password');
       setSee(true);
-      setType(false);
     }
   };
 

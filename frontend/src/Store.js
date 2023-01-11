@@ -52,19 +52,8 @@ function reducer(state, action) {
       );
 
       const favouriteItems = existItem
-        ? state.cart.favouriteItems.map((item) =>
-            item._id === existItem._id ? newItem : item
-          )
+        ? [...state.cart.favouriteItems]
         : [...state.cart.favouriteItems, newItem];
-
-      localStorage.setItem('favourites', JSON.stringify(favouriteItems));
-      return { ...state, cart: { ...state.cart, favouriteItems } };
-    }
-
-    case 'REMOVE_FAVOURITE': {
-      const favouriteItems = state.cart.favouriteItems.filter(
-        (item) => item._id !== action.payload._id
-      );
 
       localStorage.setItem('favourites', JSON.stringify(favouriteItems));
       return { ...state, cart: { ...state.cart, favouriteItems } };
@@ -86,7 +75,12 @@ function reducer(state, action) {
       return {
         ...state,
         userInfo: null,
-        cart: { cartItems: [], shippingAddress: {}, paymentMethod: '' },
+        cart: {
+          cartItems: [],
+          shippingAddress: {},
+          paymentMethod: '',
+          favouriteItems: [],
+        },
       };
     }
 

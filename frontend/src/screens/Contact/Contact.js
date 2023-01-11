@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Helmet from '../../components/Helmet';
 import { Row, Col, Form, FormGroup, FormControl } from 'react-bootstrap';
 
@@ -7,14 +7,6 @@ import '../../App.css';
 import { Icon } from '@iconify/react';
 
 function Contact() {
-  const [fullname, setFullname] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const submitHandler = async (e) => {
-    e.preventDefault();
-  };
-
   return (
     <Helmet title="Contact Us">
       <div className="contactus">
@@ -28,32 +20,17 @@ function Contact() {
           <h1>Get in touch</h1>
           <Row>
             <Col md={6} className="form__col">
-              <Form onSubmit={submitHandler}>
+              <Form>
                 <FormGroup controlId="fullname">
-                  <FormControl
-                    type="text"
-                    required
-                    placeholder="Fullname"
-                    onChange={(e) => setFullname(e.target.value)}
-                  />
+                  <FormControl type="text" required placeholder="Fullname" />
                 </FormGroup>
 
                 <FormGroup controlId="email">
-                  <FormControl
-                    type="email"
-                    required
-                    placeholder="Email"
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
+                  <FormControl type="email" required placeholder="Email" />
                 </FormGroup>
 
                 <FormGroup controlId="textarea">
-                  <FormControl
-                    as="textarea"
-                    required
-                    placeholder="Message"
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
+                  <FormControl as="textarea" required placeholder="Message" />
                 </FormGroup>
 
                 <button className="button__primary_icon">

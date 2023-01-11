@@ -35,6 +35,10 @@ function OrderHistory() {
   });
 
   useEffect(() => {
+    if (!userInfo) {
+      navigate('/signin?redirect=/orderhistory');
+    }
+
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
@@ -47,7 +51,7 @@ function OrderHistory() {
       }
     };
     fetchData();
-  }, [userInfo]);
+  }, [userInfo, navigate]);
 
   return (
     <Helmet title="Order History">

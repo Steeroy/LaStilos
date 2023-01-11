@@ -68,6 +68,11 @@ export default function NavBar() {
         <div className="right d-flex align-items-center gap-4">
           <NavLink to="/favorites">
             <Icon icon="mdi:cards-heart-outline" />
+            {cart.favouriteItems.length > 0 && (
+              <Badge pill bg="danger">
+                {cart.favouriteItems.length}
+              </Badge>
+            )}
           </NavLink>
 
           <NavLink to="/cart">

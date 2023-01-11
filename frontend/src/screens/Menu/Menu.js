@@ -7,7 +7,7 @@ import './Menu.css';
 import '../../App.css';
 import logger from 'use-reducer-logger';
 import axios from 'axios';
-import { Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import LoadingBox from '../../components/LoadingBox';
 import MessageBox from '../../components/MessageBox';
 import ProductCard from '../../components/ProductCard';
@@ -34,8 +34,6 @@ function Menu() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [pageNumber, setPageNumber] = useState(0);
-
-  //const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {

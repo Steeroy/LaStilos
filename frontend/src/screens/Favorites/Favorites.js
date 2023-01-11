@@ -26,16 +26,16 @@ function Favorites() {
 
         <div className="favourites__content">
           <Row>
-            {favouriteItems ? (
-              favouriteItems.map((item) => (
-                <Col md={2} className="product__col" key={item.id}>
-                  <ProductCard product={item} />
-                </Col>
-              ))
-            ) : (
-              <MessageBox>
+            {!favouriteItems ? (
+              <MessageBox key="message">
                 No Favoutes. <Link to="/menu">Add favourites</Link>
               </MessageBox>
+            ) : (
+              favouriteItems.map((item) => (
+                <div className="product__col" key={item.id}>
+                  <ProductCard product={item} />
+                </div>
+              ))
             )}
           </Row>
         </div>
