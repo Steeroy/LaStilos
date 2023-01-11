@@ -136,4 +136,104 @@
   font-weight: 700;
   font-size: 16px;
   color: var(--secondary900);
+}
+
+@media only screen and (max-width: 992px) {
+  .shipping .page__banner {
+    margin-bottom: 52px !important;
+  }
+  .shipping .shipping__info {
+    margin: 0px 56px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .shipping .page__banner {
+    margin-bottom: 42px !important;
+  }
+  .shipping .shipping__info {
+    margin: 0px 36px !important;
+  }
+  .shipping .shipping__info .info__row {
+    flex-direction: column !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 {
+    width: 100% !important;
+    margin-top: 24px !important;
+    margin-bottom: 32px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form {
+    width: 90% !important;
+  }
+  .shipping .shipping__info .info__row .order__summary {
+    width: 70% !important;
+    padding: 0px 10px !important;
+    transform: translateX(25%);
+  }
+  .shipping .shipping__info .info__row .order__summary h4 {
+    font-size: 22px !important;
+    text-align: center;
+    margin: 0px !important;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(2) {
+    padding: 8px 0px !important;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(2) div {
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(2) div .titles {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(2) div .outcomes {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(3) {
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(3) .titles {
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  .shipping .shipping__info .info__row .order__summary .row:nth-child(3) .outcomes {
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .shipping .page__banner {
+    height: 96px !important;
+  }
+  .shipping .page__banner .page__banner_text span {
+    font-size: 38px !important;
+    text-align: center;
+  }
+  .shipping .shipping__info {
+    margin: 0px 20px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form {
+    gap: 12px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form label {
+    font-size: 12px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form input {
+    height: 34px !important;
+    font-size: 12px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form input::-moz-placeholder {
+    font-size: 12px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form input:-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+  .shipping .shipping__info .info__row .col-md-8 form input::placeholder {
+    font-size: 12px !important;
+  }
 }/*# sourceMappingURL=Shipping.css.map */

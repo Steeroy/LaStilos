@@ -71,6 +71,15 @@
     font-size: 12px !important;
     padding: 0px 12px !important;
   }
+  .sign__in form input::-moz-placeholder {
+    font-size: 12px !important;
+  }
+  .sign__in form input:-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+  .sign__in form input::placeholder {
+    font-size: 12px !important;
+  }
   .sign__in form div:nth-child(4) {
     font-size: 14px !important;
   }

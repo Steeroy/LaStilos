@@ -27,3 +27,93 @@
     margin: 0px 64px 64px 64px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .orderhistory {
+    .page__banner {
+      margin-bottom: 52px !important;
+    }
+
+    .orderhistorydetails {
+      margin: 0px 56px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .orderhistory {
+    .page__banner {
+      margin-bottom: 42px !important;
+    }
+
+    .orderhistorydetails {
+      margin: 0px 36px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .orderhistory {
+    .page__banner {
+      margin-bottom: 36px !important;
+      height: 96px !important;
+
+      .page__banner_text {
+        span {
+          font-size: 38px !important;
+          text-align: center;
+        }
+      }
+    }
+
+    .orderhistorydetails {
+      margin: 0px 20px !important;
+
+      .table {
+        thead {
+          tr {
+            th {
+              font-size: 12px !important;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-size: 12px !important;
+
+              button {
+                height: 32px !important;
+                padding: 4px 8px !important;
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .orderhistory .orderhistorydetails {
+    .table {
+      thead {
+        tr {
+          th:not(:nth-child(1), :nth-child(2), :nth-child(3), :nth-child(6)) {
+            display: none;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td:not(:nth-child(1), :nth-child(2), :nth-child(3), :nth-child(6)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

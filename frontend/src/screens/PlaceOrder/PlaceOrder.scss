@@ -237,3 +237,209 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .placeorder {
+    .page__banner {
+      margin-bottom: 52px !important;
+    }
+
+    .placeorder__details {
+      margin: 0px 56px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .placeorder {
+    .page__banner {
+      margin-bottom: 42px !important;
+    }
+
+    .placeorder__details {
+      margin: 0px 36px !important;
+
+      .product__info {
+        flex-direction: column !important;
+        gap: 36px !important;
+
+        .products_col {
+          width: 100% !important;
+        }
+
+        .order__summary {
+          width: 70% !important;
+          transform: translateX(25%);
+          padding: 0px 12px !important;
+
+          .payment__type {
+            margin-bottom: 24px !important;
+
+            .row {
+              display: grid !important;
+              grid-template-columns: 60% 20% 20% !important;
+
+              .col-md-6 {
+                width: 100% !important;
+              }
+              h3 {
+                font-size: 18px !important;
+              }
+
+              span {
+                font-size: 14px !important;
+              }
+            }
+          }
+
+          h4 {
+            font-size: 22px !important;
+            text-align: center;
+            margin: 0px !important;
+          }
+
+          .row:nth-child(3) {
+            padding: 8px 0px !important;
+
+            div {
+              display: grid !important;
+              grid-template-columns: 50% 50%;
+
+              .titles {
+                display: flex !important;
+                width: 100% !important;
+
+                justify-content: center !important;
+                text-align: center;
+                font-size: 14px !important;
+              }
+
+              .outcomes {
+                display: flex !important;
+                justify-content: center !important;
+                width: 100% !important;
+                text-align: center;
+                font-size: 14px !important;
+              }
+            }
+          }
+
+          .row:nth-child(4) {
+            display: grid !important;
+            padding: 8px 0px !important;
+            grid-template-columns: 50% 50%;
+
+            .titles {
+              display: flex !important;
+              width: 100% !important;
+
+              justify-content: center !important;
+              text-align: center;
+              font-size: 20px !important;
+            }
+
+            .outcomes {
+              display: flex !important;
+              justify-content: center !important;
+              width: 100% !important;
+              text-align: center;
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .placeorder {
+    .page__banner {
+      margin-bottom: 36px !important;
+      height: 96px !important;
+
+      .page__banner_text {
+        span {
+          font-size: 38px !important;
+          text-align: center;
+        }
+      }
+    }
+
+    .placeorder__details {
+      margin: 0px 20px !important;
+
+      .products_col {
+        .products {
+          padding: 12px 18px !important;
+          border-radius: 4px !important;
+          gap: 16px !important;
+
+          h4 {
+            font-size: 18px !important;
+          }
+
+          .cart__items {
+            gap: 6px !important;
+
+            .item__row {
+              display: grid !important;
+              grid-template-columns: 20% 50% 30% !important;
+
+              .item__image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                  width: 70% !important;
+                  height: auto !important;
+                  object-fit: contain;
+                }
+              }
+
+              .col-md-6 {
+                h5 {
+                  margin: 0px !important;
+                  font-size: 16px !important;
+                }
+              }
+
+              .col-md-3 {
+                font-size: 16px !important;
+              }
+            }
+          }
+
+          a {
+            h6 {
+              font-size: 14px !important;
+            }
+          }
+        }
+
+        .address {
+          padding: 12px 18px !important;
+          border-radius: 4px !important;
+          gap: 16px !important;
+
+          h4 {
+            font-size: 18px !important;
+          }
+
+          a {
+            h6 {
+              font-size: 14px !important;
+            }
+          }
+
+          .address_details {
+            p {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

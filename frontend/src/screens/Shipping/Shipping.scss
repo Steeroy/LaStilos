@@ -146,3 +146,129 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .shipping {
+    .page__banner {
+      margin-bottom: 52px !important;
+    }
+
+    .shipping__info {
+      margin: 0px 56px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .shipping {
+    .page__banner {
+      margin-bottom: 42px !important;
+    }
+
+    .shipping__info {
+      margin: 0px 36px !important;
+
+      .info__row {
+        flex-direction: column !important;
+
+        .col-md-8 {
+          width: 100% !important;
+          margin-top: 24px !important;
+          margin-bottom: 32px !important;
+
+          form {
+            width: 90% !important;
+          }
+        }
+
+        .order__summary {
+          width: 70% !important;
+          padding: 0px 10px !important;
+          transform: translateX(25%);
+
+          h4 {
+            font-size: 22px !important;
+            text-align: center;
+            margin: 0px !important;
+          }
+
+          .row:nth-child(2) {
+            padding: 8px 0px !important;
+
+            div {
+              display: grid !important;
+              grid-template-columns: 50% 50%;
+
+              .titles {
+                display: flex !important;
+                justify-content: center !important;
+                text-align: center;
+                font-size: 14px !important;
+              }
+
+              .outcomes {
+                display: flex !important;
+                justify-content: center !important;
+                text-align: center;
+                font-size: 14px !important;
+              }
+            }
+          }
+
+          .row:nth-child(3) {
+            display: grid !important;
+            grid-template-columns: 50% 50%;
+            .titles {
+              text-align: center !important;
+              font-size: 20px !important;
+            }
+
+            .outcomes {
+              text-align: center !important;
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .shipping {
+    .page__banner {
+      height: 96px !important;
+      .page__banner_text {
+        span {
+          font-size: 38px !important;
+          text-align: center;
+        }
+      }
+    }
+
+    .shipping__info {
+      margin: 0px 20px !important;
+
+      .info__row {
+        .col-md-8 {
+          form {
+            gap: 12px !important;
+
+            label {
+              font-size: 12px !important;
+            }
+
+            input {
+              height: 34px !important;
+              font-size: 12px !important;
+
+              &::placeholder {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
